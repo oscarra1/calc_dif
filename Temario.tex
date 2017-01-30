@@ -9,14 +9,15 @@
 \addto\shorthandsspanish{\spanishdeactivate{~<>.}}
 \usepackage{amsfonts}
 %%\usepackage[pagebackref,ocgcolorlinks,pdfborderstyle=U]{hyperref}
-\usepackage[pagebackref,ocgcolorlinks]{hyperref}
+%\usepackage[pagebackref,ocgcolorlinks]{hyperref}
 \usepackage{graphicx}
 \usepackage{commath}
-
+\usepackage{biblatex}
+\bibliography{EDA-biblio}
 
 \begin{document}
 
-\title{Cálculo Vectorial}
+\title{Cálculo Diferencial}
 
 \author{Oscar Rendón Aldaraca}
 
@@ -83,12 +84,16 @@ La regla de L’Hôpital.
 
 
 
-\bibliographystyle{te}
+%\bibliographystyle{}
 
 
-\bibliography{EDA-biblio}
 
+%\addbibresource{EDA-biblio}
 %\bibliographystyle{plain}
+
+\printbibliography
+
+
 %\bibliography{
 
 \end{document}
