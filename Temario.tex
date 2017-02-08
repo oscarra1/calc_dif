@@ -1,6 +1,6 @@
 %% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
-\documentclass[oneside,spanish]{extbook}
+\documentclass[oneside,spanish,letter]{extbook}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \setcounter{secnumdepth}{3}
@@ -8,11 +8,15 @@
 \usepackage{babel}
 \addto\shorthandsspanish{\spanishdeactivate{~<>.}}
 \usepackage{amsfonts}
+\usepackage{amssymb}
 %%\usepackage[pagebackref,ocgcolorlinks,pdfborderstyle=U]{hyperref}
 %\usepackage[pagebackref,ocgcolorlinks]{hyperref}
 \usepackage{graphicx}
 \usepackage{commath}
-\usepackage{biblatex}
+
+\usepackage{hyperref}
+
+\usepackage[backend=biber]{biblatex}
 \bibliography{EDA-biblio}
 
 \begin{document}
@@ -26,17 +30,20 @@
 \tableofcontents
 %\listoffigures
 %\listoftables
-<ref>http://mitecnologico.com/igestion/Main/CalculoDiferencial</ref>
 \chapter{Números reales}
-Los números que pueden representarse por notación decimal se llaman números reales. 
-En palabras más simples, todos esos números que perduran son reales.
+Los números que pueden representarse por notación decimal se llaman números reales.
 Cada tipo de número encaja en el conjunto de los números reales.
 Este conjunto incluye, básicamente, los números naturales, números enteros, números racionales e irracionales.
 Todo número real puede tener lugar en la recta numérica. \cite{cd1}
 
 
 \section{Los Números Reales}
+Los números reales abarcan el conjunto de los números naturales, el de los enteros, el de los racionales y
+el conjunto de los números irracionales.
 \section{Axiomas de los números reales.}
+Axioma viene del griego axioma que significa ``Lo que parece justo'' o sea lo evidente, que viene del griego "axioein``
+ valorar que a la vez viene del griego ``axios'' valuable o digno. 
+ Por lo que viene a significar todo aquello que no requiere prueba. 
 \section{Intervalos y su representación gráfica.}
 Un subconjunto de la recta se llama "Intervalo".
 Los intervalos de números correspondientes a segmentos de recta son
@@ -45,16 +52,14 @@ Los intervalos correspondientes a semirectas y a la recta real son intervalos in
 Los intervalos finitos pueden ser cerrados, abiertos o semiabiertos.
 Sean "a y b" dos números reales tales que 2<3.
 Intervalo Abierto:
-{x/2<x<3}
-(2,3)
+para $\forall x\in \mathbb{R}$:
+$$\{x|2<x<3\}:=(2,3)$$
 
 
 
 Intervalo Semicerrado a derecha:
-{x/2<x<=3}
-(2,3]
+$$\{x|2<x\leq 3\}:=(2,3]$$
 
-2 3
 
 
 
@@ -164,7 +169,7 @@ La solución total del conjunto incluirá todos los números tanto del primer co
 
 Saludos y suerte prof lauro soto 
 
-\subsection{Valor Absoluto y sus Propiedades.} 
+\section{Valor Absoluto y sus Propiedades.} 
 Es la distancia del mismo con respecto al cero en la recta númerica.
 Su valor de cualquier número siempre es positivo.
 No Negatividad:
@@ -266,23 +271,29 @@ Por tanto, se puede ver que L.I. > L.D.
 
 Es decir, | 2 - 7| › | 2 | - | 7 |
 
-saludos y suerte prof lauro soto 
-
-
-1.6 Resolucion De Desigualdades De Primer Grado Con Una Incognita Y De Desigualdades Cuadraticas Con Una Incognita
+\section{Propiedades de las desigualdades.}
+\section{Resolución de desigualdades de primer y segundo grado con una incógnita.}
+ 
 Solución de desigualdades de primer grado
 
-Las desigualdades de primer grado, más conocidas como desigualdades lineales, son las desigualdades en las que la mayor potencia del pronumeral o variable no es mayor que 1.
+Las desigualdades de primer grado, más conocidas como desigualdades lineales, son las desigualdades en 
+las que la mayor potencia de la variable independiente es igual a 1.
 
-Por ejemplo: x + y> 5 se puede llamar desigualdad lineal. Estas desigualdades se pueden emplear para resolver muchos de los problemas matemáticos.
+Por ejemplo: x + y> 5 se puede llamar desigualdad lineal. Estas desigualdades se pueden emplear para
+resolver muchos de los problemas matemáticos.
 
-La desigualdad lineal difiere de las ecuaciones lineales por el hecho de que las ecuaciones lineales con una sola variable pueden tener solo una solución que sea verdadera. Sin embargo, en el caso de las desigualdades lineales puede haber varias soluciones para una variable que satisfaga la desigualdad correspondiente.
+La desigualdad lineal difiere de las ecuaciones lineales por el hecho de que las ecuaciones lineales
+con una sola variable pueden tener solo una solución que sea verdadera. Sin embargo, en el caso de las
+desigualdades lineales puede haber varias soluciones para una variable que satisfaga la desigualdad correspondiente.
 
-Por ejemplo: la ecuación lineal 5x = 20 tiene que x = 4 es su única solución, mientras que la desigualdad 5x> 20 puede tener como su solución todos los números mayores a 4.
+Por ejemplo: la ecuación lineal 5x = 20 tiene que x = 4 es su única solución, mientras que
+la desigualdad 5x> 20 puede tener como su solución todos los números mayores a 4.
 
-Reemplazando ‘=’de la ecuación lineal con mayor que ‘>’, menor que‘<’ , mayor o igual que ‘ ’ o menor o igual que el símbolo ‘ ‘, las desigualdades lineales pueden ser obtenidas.
+Reemplazando ‘=’de la ecuación lineal con mayor que ‘>’, menor que‘<’ , mayor o igual que ‘ ’ o menor o igual
+que el símbolo ‘ ‘, las desigualdades lineales pueden ser obtenidas.
 
-Un sistema de desigualdades lineales consiste en más de una desigualdad que debe ser satisfecha de forma simultánea. Por tanto, una solución del sistema de desigualdades lineales significa una solución que satisfará a todas las desigualdades del sistema, es decir, una solución que es común a todas las desigualdades del sistema. Del mismo modo, el grupo de todas las soluciones de la desigualdad se denomina conjunto de soluciones.
+Un sistema de desigualdades lineales consiste en más de una desigualdad que debe ser satisfecha
+de forma simultánea. Por tanto, una solución del sistema de desigualdades lineales significa una solución que satisfará a todas las desigualdades del sistema, es decir, una solución que es común a todas las desigualdades del sistema. Del mismo modo, el grupo de todas las soluciones de la desigualdad se denomina conjunto de soluciones.
 
 Cuando se solucionan desigualdades de primer grado, algunas propiedades pueden ser muy útiles:
 
@@ -294,9 +305,13 @@ Cuando se solucionan desigualdades de primer grado, algunas propiedades pueden s
 
                                xz > yz cuando z es negativo 
 
-Es decir la dirección de la desigualdad sigue siendo igual si un número idéntico positivo es sumado en sus dos lados. Sin embargo, la dirección cambia, si el mismo número negativo se añade en ambos lados de la desigualdad.
+Es decir la dirección de la desigualdad sigue siendo igual si un número idéntico positivo es
+sumado en sus dos lados. Sin embargo, la dirección cambia, si el mismo número negativo se añade en ambos lados de
+la desigualdad.
 
-4. Si x < y e z < a, entonces x + z < y + a. Se dice que las desigualdades en la misma dirección se pueden resumir. 5. Si x < y e ambos x e y son del mismo signo, entonces > . La dirección de la desigualdad cambia cuando los recíprocos de ambas partes se toman, en tal caso, ambas partes tienen el mismo signo.
+4. Si x < y e z < a, entonces x + z < y + a. Se dice que las desigualdades en la misma dirección
+se pueden resumir. 5. Si x < y e ambos x e y son del mismo signo, entonces > . La dirección de la desigualdad
+cambia cuando los recíprocos de ambas partes se toman, en tal caso, ambas partes tienen el mismo signo.
 
 Una comprensión más profunda del concepto se puede obtener con la ayuda de un ejemplo:
 
@@ -308,22 +323,177 @@ Paso 1: Reste 1 de ambos lados, entonces de acuerdo con la regla 2 citada anteri
 
 6 - 1 −4x < 9 −1 5 −4x < 8
 
-Paso 2: Ahora divida ambos lados con . De acuerdo con la regla 3, las direcciones de las desigualdades cambiarán, es decir
+Paso 2: Ahora divida ambos lados con . De acuerdo con la regla 3, las direcciones de las desigualdades cambiarán,
+es decir
 
  −5/4 x > −2
 
 Por tanto, el conjunto de soluciones yace en el intervalo de [−5/4, −2).
+\cite{cd2}
 
-saludos y suerte prof lauro soto
-<ref>http://mitecnologico.com/igestion/Main/ResolucionDeDesigualdadesDePrimerGradoConUnaIncognitaYDeDesigualdadesCuadraticasConUnaIncognita</ref>
+\subsubsection{Desigualdades de 2° grado}
+Ahora resolveremos desigualdades de cuadráticas con una incógnita.
+
+3) $x^2 > 3x + 4$
+
+Primero expresamos la desigualdad como una ecuación y resolvemos.
+$$x^2 > 3x + 4$$
+
+Restamos (3x + 4) a los dos lados para que uno de los lados quede con valor cero.
+$$x^2 - (3x + 4) = 3x + 4 - (3x + 4)$$
+$$x^2 - 3x - 4 = 0$$
+
+Como obtuvimos un trinomio cuadrado, lo podemos resolver por fórmula general o por factorización. En este caso utilizaremos la factorización.
+$(x + 1)(x - 4) = 0$
+
+Separamos cada uno de los factores y los solucionamos
+
+Primer factor
+$$x + 1 = 0$$
+$$x_1 = -1$$
+
+Segundo factor
+$$x - 4 = 0$$
+$$x_2 = 4$$
+
+Ubicamos los dos factores sobre la recta numérica para identificar los tres intervalos que se forman. 
+Evaluamos un elemento de cada intervalo para identificar cuales hacen verdadera a la desigualdad
+
+Del intervalo $(-\infty , -1)$ evaluaremos el -2\\
+$(-2)^2 > 3(-2) + 4;\;\;\;\;\; 4 > -2$  VERDADERO
+
+Del intervalo $(-1 , 4)$ evaluaremos el 0\\
+$0^2 > 3(0) + 4;\;\;\;\; 0 > 4$ FALSO
+
+Del intervalo $(4 , \infty )$ evaluaremos el 5\\
+$5^2 > 3(5) + 4;\;\;\;\;25 > 19$ VERDADERO
+
+La solución de la desigualdad es entonces: $(-\infty , -1) \cup (4 , \infty)$
+
+4) $-4x^2 + x + 5 ≥ 0$
+
+Cambiamos el signo de desigualdad por el signo de igual y revolvemos. En este caso utilizaremos la fórmula general
 
 
-\section{Valor absoluto y sus propiedades.}
-\section{Propiedades de las desigualdades.}
-\section{Resolución de desigualdades de primer y segundo grado con una incógnita.}
+$x_1 = -1$ y $x_2 = 5/4$
+Obtenemos los 3 intervalosEvaluamos un elemento de cada intervalo para identificar cuales hacen verdadera a la desigualdad
+
+Del intervalo (-∞ , -1] evaluaremos el -3
+-4(-3)2 + (-3) + 5 ≥ 0
+-34 ≥ 0 FALSO
+
+Del intervalo [-1 , 5/4] evaluaremos el 1
+-4(1)2 + 1 + 5 ≥ 0
+2 ≥ 0 VERDADERO
+
+Del intervalo [5/4 , ∞) evaluaremos el 2
+-4(2)2 + 2 + 5 ≥ 0
+-9 ≥ 0 FALSO
+
+La solución de la desigualdad es entonces: [-1 , 5/4]
+\cite{cd3}
+
+
 \section{Resolución de desigualdades que incluyan valor absoluto.}
+Resolver
+$$|x+7|\geq 12$$
+
+$$|x+2| \nleq x+7$$
+
+
 \chapter{Funciones.}
+Las funciones forman una parte integral del álgebra básica en las matemáticas.
+
+Las funciones pueden ser consideradas como una idea que toma una o más de una variable como entrada y 
+produce una sola variable como salida.
+
+Las funciones se utilizan principalmente para asociar el argumento de la función, también llamado la entrada
+de la función, al valor de la función, también llamado la salida de la función.
+
+No es esencial que el valor y los argumentos de la función sean números reales,
+también es posible que formen parte de un conjunto.
+
+Si hablamos en términos matemáticos, una función puede ser definida como la proyección de un dominio sobre un rango, donde el dominio es la entrada de la función y el rango es la salida de la función.
+
+Es necesario que haya un elemento correspondiente en el rango de la función para cada elemento en el dominio de la función.
+
+De la oración anterior se puede concluir que todas las entradas probables de una función deben estar en el dominio de la función y todas las salidas probables de la función deben estar en el rango de la función.
+
+También se puede concluir de las declaraciones anteriores que para un solo elemento en el dominio de la función, existe un solo elemento en el rango de la función.
+
+Mientras que para un solo elemento en el rango de la función pueden existir numerosos elementos en el dominio de la función.
+
+Las matemáticas modernas también incluyen el concepto de co-dominio como parte de las funciones.
+
+Un co-dominio es un conjunto de elementos compuesto por números fijos incluyendo todas las salidas probables de la función, como ejemplo, en el caso de una función valorada real el co-dominio se compone de todos los números reales, aunque algunos de ellos no formen parte del rango de la función.
+
+Sin embargo esto no ocurre en el caso de todas las funciones.
+
+Una función puede ser representada de muchas maneras, es decir, a través de las fórmulas matemáticas, 
+con la ayuda de un algoritmo, con la ayuda de gráficos o enumerando las salidas de la función para todas las
+probables entradas.
+
+El último método, es decir, el método tabular se utiliza mayormente en la ingeniería,
+la estadística y la ciencia.
+
+Una forma importante de representar una función es describir su relación con otra función,
+que puede ser llamada la inversa de la función.
+
+Para entender una función a profundidad, es importante saber que una función puede ser considerada
+como la proyección de una recta numérica real a otra recta numérica real, es decir, R1 → R2, lo que
+significa que la recta numérica real 1 se asigna a la recta numérica real 2.
+
+También es posible definir las funciones de los números complejos, sin embargo, esto forma parte
+del álgebra superior y es bastante complejo.
+
+La notación formal de una función se asemeja a, f:N → R
+
+Donde, f es una función de N a R. R forma el valor de la función y N es el argumento de la función.
+
+Para arrojar más luz sobre el tema veamos un ejemplo,
+
+$f(x) = 2x + 3$ se puede resolver para dos valores 2 y −3 como
+
+$$f(2) = 2 x 2 + 3 =7$$
+
+$$f(−3) = 2 x (−3) + 3 = −3$$
+
+$f(x)=y$
+
+$f$ es el nombre de la función
+
+(x) es la entrada de la función
+
+e y es la salida de la función\cite{cd1}
+
 \section{Definición de variable, función, dominio y rango.}
+\subsection{FUNCIÓN} 
+
+En matemáticas, se dice que una magnitud o cantidad es función de otra si el valor de la primera depende exclusivamente del valor de la segunda.
+De forma más abstracta, el concepto general de función,  se refiere en matemáticas a una regla que asigna a cada elemento de un primer conjunto un único elemento de un segundo conjunto.
+
+Por ejemplo , una funcion seria el area de un circulo , ya que el area depende de la medida del radio. 
+El valor del área es proporcional al cuadrado del radio, A = π·r2   
+Entonces , se dice que el area a de un circulo es funcion de su radio.
+
+ A la primera magnitud (el área) se la denomina variable dependiente, y la cantidad de la que depende (el radio) es la variable independiente.
+
+
+
+\subsection{DOMINIO}
+
+
+El dominio de una funcion son los valores  para los cuales la funcion esta definida o en otras palabras, es el conjunto de todos los posibles valores que la funcion acepta.
+Por ejemplo:
+
+Si la funcion f(x) = x al cuadrado,     se le dan los valores x = {1,2,3....} entonces {1,2,3....} es el dominio.
+
+\subsection{RANGO}
+ 
+El rango de una funcion es el conjunto de todos los valores de salida de una funcion o es el conjunto formado por todos los valores que puede llegar a tomar la función.
+
+Ejemplo: si a la función f(x) = x2 se le dan los valores x = {1,2,3,...} entonces el rango será {1,4,9,...} \cite{cd4}
+
 \section{Función real de variable real y su representación gráfica.}
 \section{Función inyectiva, suprayectiva y biyectiva.}
 \section{Funciones algebraicas: polinomiales y racionales.}
