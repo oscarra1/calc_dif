@@ -512,7 +512,7 @@ $(x)$ es la entrada de la función
 
 y $y$ es la salida de la función\cite{cd1}
 
-\section{Definición de variable, función, dominio y rango.}
+\section{Definición de variable, función, dominio, rango y codominio.}
 \subsection{Variable}
 \begin{description}
  \item Sujeto es el que percibe.
@@ -526,7 +526,7 @@ y describirlo o mencionarlo en lugar del objeto.
 \end{description}
 
 
-\subsection{FUNCIÓN} 
+\subsection{Función} 
 
 En matemáticas, se dice que una magnitud o cantidad es función de otra si el valor de la primera depende
 exclusivamente del valor de la segunda.
@@ -542,7 +542,7 @@ Entonces , se dice que el área $A$ de un circulo es función de su radio $r$.
 
 
 
-\subsection{DOMINIO}
+\subsection{Dominio}
 
 
 El dominio de una función son los valores  para los cuales la función esta definida o en otras palabras,
@@ -551,14 +551,20 @@ Por ejemplo:
 
 Si la función $f(x) = x^2$,     se le dan los valores $x = \{1,2,3,...\}$ entonces $\{1,2,3,...\}$ es el dominio.
 
-\subsection{RANGO}
+\subsection{Rango y Codominio}
  
 El rango de una función es el conjunto de todos los valores de salida de una función o es el conjunto
-formado por todos los valores que puede llegar a tomar la función.
+formado por todos los valores que puede llegar a tomar la función para un dominio determinado.
 
-Ejemplo: si a la función $f(x) = x^2$ se le dan los valores $x \in \{1,2,3,...\}$ entonces el rango será $\{1,4,9,...\}$
+Ejemplo: si a la función $f(x) := x^2$ y a `$x$ se le dan los valores $x \in \{1,2,3,...\}$
+entonces el rango será $\{1,4,9,...\}$
 \cite{cd4}
-
+El codominio es el conjunto de donde salen los valores del rango , en este caso el rango es subconjunto
+de los números $\mathbb{N}$ por lo que tanto el rango y los números naturales son codominio de la función $f$.
+$$f:\mathbb{N}\longrightarrow \mathbb{N}$$
+$$\mathcal{D}=\mathbb{N};\;\;\mathcal{C}=\mathbb{N};\;\;\mathcal{R}=\{1,4,9,16,...\}; $$
+y en este ejemplo
+$$\mathcal{R} \subset \mathcal{C};\;\; \mathcal{R} \neq \mathcal{C}$$
 \section{Función real de variable real y su representación gráfica.}
 Función real de variable real es la función cuyo resultado es un número que pertenece a los números reales y cuya variable
 independiente pertenece a los números reales, en otras palabras su dominio son los reales y su rango también son los reales.
@@ -572,32 +578,103 @@ $$x\in \mathbb{R}$$
 
 \section{Función inyectiva, suprayectiva y biyectiva.}
 Las funciones pueden ser clasificadas principalmente en tres categorías basadas en como 
-las imágenes y sus argumentos están relacionados. A saber en funciones inyectivas, sobreyectivas o
+las imágenes y sus argumentos están relacionados, a saber en funciones inyectivas, sobreyectivas o
  biyectivas.
 
-Una función es inyectiva, también llamada función de uno a uno, cuando conserva la distinción,
+Una función es inyectiva, o también llamada función de uno a uno, cuando conserva la distinción,
 es decir, no asigna distintos elementos en su dominio al mismo elemento en su co-dominio.
 En otras palabras, podemos decir que hay una asignación uno a uno entre los elementos del dominio
 y el co-dominio de la función.
 A la luz de la declaración anterior, podemos concluir que hay una salida diferente para cada entrada de la función.
 Matemáticamente:
 
-La función $f:S\longrightarrow T$ es inyectiva si para $\forall x,y \in S, x \neq y \Rightarrow f(x) \neq f(y) $
+La función $f:\mathcal{D}\longrightarrow \mathcal{R}$ es inyectiva si para
+$\forall x,y \in \mathcal{D}, x \neq y \Rightarrow f(x) \neq f(y) $
 
 La notación utilizada para representar una función inyectiva es la flecha con cola de pescado,
-es decir, $f: A\rightarrowtail B$, donde f es una función de A a B. Tal función asegura una imagen diferente para cada
+es decir, $f: A\rightarrowtail B$, donde $f$ es una función de A a B. Tal función asegura una imagen
+ diferente para cada
 elemento en el dominio de la función. Sin embargo, en algunos casos, un elemento en
 particular en el rango de la función puede tener múltiples pre- imágenes.
 
-En términos matemáticos, una función inyectiva es una función f: A  B, donde ningún elemento de B es la imagen de dos o más elementos diferentes de A bajo f. En terminología gráfica, si la curva que representa la función es cortada por cualquier línea horizontal al menos una vez, entonces tal función es llamada función inyectiva.
+En términos matemáticos, una función inyectiva es una función $f: A\rightarrow B$, donde ningún elemento
+de B es la imagen de dos o más elementos diferentes de A bajo f. En terminología gráfica, si la curva
+que representa la función es cortada por cualquier línea horizontal una sola vez, entonces tal
+función es llamada función inyectiva.
 
-Una función sobreyectiva, también conocida con el nombre de sobre función, es aquella en la cual podemos obtener todos los números en el co-dominio de la función por la aplicación de la correspondencia / función f a un número en el dominio de la función. En tal escenario, pueden existir varios elementos en el dominio de la función que se asignen al mismo elemento en el co-dominio de la función.
+Una función sobreyectiva, suprayectiva o exhaustiva  también conocida con el nombre de sobre función,
+es aquella en la cual
+podemos obtener todos los números en el codominio de la función por la aplicación de la correspondencia
+ función f a un número en el dominio de la función. En tal escenario, pueden
+existir varios elementos en el dominio de la función que se asignen al mismo elemento
+en el co-dominio de la función.
 
-En términos matemáticos, una función sobreyectiva es una función f: A  B donde el rango de la función es igual al co-dominio de la función. En general, una función con rango R y co-dominio B posee la propiedad de que R es subconjunto de B.
+En términos matemáticos, una función sobreyectiva 
+es una función $f:\mathcal{D}\longrightarrow \mathcal{R}\subseteq\mathcal{C}$ donde 
+el rango de la función es igual al codominio de la función $\mathcal{R}=\mathcal{C}$.
+Una consecuencia de lo anterior es que la cardinalidad del dominio es mayor o igual a la cardinalidad del rango y
+del codominio.
+$$card(\mathcal{D})\leq card(\mathcal{R})=card(\mathcal{C})$$
 
-Por lo tanto, con el fin de demostrar que una función es una función sobreyectiva, debemos probar que B es un subconjunto de R. Con este fin uno puede tomar arbitrariamente cualquier elemento del co-dominio y demostrar que este existe como la imagen de algún elemento en el dominio de la función. 
+Por lo tanto, con el fin de demostrar que una función es una función sobreyectiva,
+debemos probar que $\mathcal{R}$ es un subconjunto propio de $\mathcal{C}$.
+Con este fin uno puede tomar arbitrariamente
+cualquier elemento del codominio y demostrar que este existe como la imagen de algún elemento
+en el dominio de la función.\cite{cd9}
+$$\forall x,\exists f(x)\in \mathcal{C}$$
 \section{Funciones algebraicas: polinomiales y racionales.}
+Funciones algebraicas son aquellas que pueden ser representadas con las operaciones aritméticas sumas, restas,
+multiplicaciones y divisiones finitas entre variables y constantes.
+A continuación se exponen varios tipos de funciones algebraicas.
+\subsection{Funciones polinomiales}
+Un polinomio es una fórmula algebraica que puede ser representada como la suma de 2 o más monomios.
+Un monomio es una variable independiente con exponente cero o natural ($\mathbb{N}$) que multiplica a una constante
+real($\mathbb{R}$). La fórmula general de un polinomio de una variable independiente $x_j$ es:
+$$P: \overset{n}{\underset{i=0}{\sum }}a_{ij}x^i_j $$
+Donde $x_j$ es la variable independiente, $n$ es el grado del polinomio en cuestión y $a_{ij}$ son las constantes 
+de tipo real, una para para cada $x_{j}^i$.
+La suma de varios polinomios dará un polinomio por lo que un polinomio puede tener más de una variable independiente
+ $j$ que iría de $\;j|_1^m$.
+\subsection{Funciones racionales}
+Como su nombre lo indica, son las funciones que se pueden representar como la relación (razón) entre
+2 funciones polinomiales. Así si $P$ es el conjunto de las funciones polinomiales y $p,j$ son dos funciones polinomiales
+cualquiera. $r$ será una función racional si es la división o razón entre 2 funciones polinomiales. Más formalmente:
+$$P:funciones\;polinomiales$$
+entonces
+$$r\in R:funciones\; racionales\;\Leftarrow \;r=p/q|p,q\in P $$
+
 \section{Funciones trascendentes: trigonométricas, logarítmicas y exponenciales.}
+Una función trascendente es una función que no es algebraica, esto es no puede ser representada como el cociente de 2 
+funciones polinómicas o sea una función que no es una función racional. Entre los ejemplos de funciones trascendentes
+son las funciones 
+trigonométricas, las funciones logarítmicas y las funciones exponenciales.
+\subsection{Funciones trigonométricas}
+Son las funciones que relacionan los lados del triángulo rectángulo y sus ángulos internos entre sí.
+Siendo el ángulo la variable independiente de la función específica:
+La función seno es el cateto opuesto entre la hipotenusa.
+La función coseno es el cateto adyacente entre la hipotenusa.
+La función tangente es el cateto opuesto entre el cateto adyacente.
+Y sus inversas que son cosecante, secante y cotangente respectivamente.
+\subsection{Funciones exponenciales}
+Una función exponencial es la función en la que la variable independiente es el exponente de una constante,
+por ejemplo la función exponencial es la definida como la función $f:\mathbb{R}\rightarrow\mathbb{R}$ de la forma,
+$f:=exp(x) = e^x$ en este caso, $e=2.718...$ que es un número irracional por lo tanto pertenece al conjunto de los
+números irracionales y no puede ser expresado como la razón entre 2 enteros.
+$$e\in \mathbb{I}=\mathbb{P}$$
+$$\nexists x,y|x,y\in \mathbb{N}; e=x/y$$
+
+A $e$ también se le conoce como número o constante de Euler (se pronuncia oiler) o también de Napier.\cite{cd12}
+Una función exponencial siempre va a tener un valor positivo.
+La siguiente relación siempre se cumple:
+\begin{equation}
+ k^{x+y}=k^xk^y \label{sumaexp}
+\end{equation}
+
+
+\subsection{Funciones logarítmicas}
+
+
+
 \section{Funciones escalonadas.}
 \section{Operaciones con funciones: adición, multiplicación, división y composición.}
 \section{Función inversa.}
