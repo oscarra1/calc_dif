@@ -1,0 +1,44 @@
+2.1 Definición de variable, función, dominio y rango.
+2.2 Función real de variable real y su representación gráfica.
+2.3 Función inyectiva, suprayectiva y biyectiva.
+2.4 Funciones algebraicas: polinomiales y racionales.
+2.5 Funciones trascendentes: trigonométricas, logarítmicas y exponenciales.
+2.6 Funciones escalonadas.
+2.7 Operaciones con funciones: adición, multiplicación, división y composición.
+2.8 Función inversa.
+2.9 Función implícita.
+2.10 Otro tipo de funciones.
+3 Límites y continuidad.
+
+3.1 Noción de límite.
+3.2 Definición de límite de una función.
+3.3 Propiedades de los límites.
+3.4 Cálculo de límites.
+3.5 Límites laterales.
+3.6 Límites infinitos y límites al infinito.
+3.7 Asíntotas.
+3.8 Continuidad en un punto y en un intervalo.
+3.9 Tipos de discontinuidades.
+
+4 Derivadas
+4.1 Interpretación geométrica de la derivada.
+4.2 Incremento y razón de cambio.
+4.3 Definición de la derivada de una función.
+4.4 Diferenciales.
+4.5 Cálculo de derivadas.
+4.6 Regla de la cadena.
+4.7 Derivada de funciones implícitas.
+4.8 Derivadas de orden superior.
+
+5 Aplicaciones de la derivada.
+5.1 Recta tangente y recta normal a una curva en un punto.
+5.2 Teorema de Rolle y teoremas del valor medio.
+5.3 Función creciente y decreciente.
+5.4 Máximos y mínimos de una función.
+5.5 Criterio de la primera derivada para máximos y mínimos.
+5.6 Concavidades y puntos de inflexión.
+5.7 Criterio de la segunda derivada para máximos y mínimos.
+5.8 Análisis de la variación de una función. Graficación.
+5.9 Problemas de optimización y de tasas relacionadas.
+5.10 Cálculo de aproximaciones usando diferenciales.
+5.11 La regla de L’Hôpital.
