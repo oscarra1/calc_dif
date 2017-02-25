@@ -1,5 +1,3 @@
-%% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
 \documentclass[oneside,spanish,letter]{extbook}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -15,6 +13,8 @@
 \usepackage{commath}
 
 \usepackage{hyperref}
+
+\newtheorem{example}{Ejemplo}[section]% Example
 
 \usepackage[backend=biber]{biblatex}
 \bibliography{EDA-biblio}
@@ -682,7 +682,7 @@ población humana y otros crecimientos.
 \subsection{Funciones logarítmicas}
 Una función logarítmica es aquella que genéricamente se expresa como $f (x) == log_ax$, siendo $a$ la base
 de esta función, que ha de ser positiva y distinta de 1.
-La función logarítmica es la inversa de la función exponencial (ver t35), dado que:
+La función logarítmica es la inversa de la función exponencial (ver figura \ref{explog}), dado que:
 $log_a x = b \Longleftarrow a^b = x$.
 \begin{figure}
  \includegraphics[scale=.9]{FuncionLogaritmica}\caption{Función exponencial y función logarítmica)}\label{explog}
@@ -692,43 +692,82 @@ de las matemáticas, las ciencias naturales y las ciencias sociales. Entre otros
 se usa ampliamente para «comprimir» la escala de medida de magnitudes cuyo crecimiento,
 demasiado rápido, dificulta su representación visual o la sistematización del fenómeno que representa.\cite{cd13}
 
-\section{Funciones escalonadas.}
+\subsection{Funciones escalonadas.}
+Una función escalonada es aquella función definida a trozos que en cualquier intervalo finito
+[a, b] en que esté definida tiene un número finito de discontinuidades $c_1 < c_2 < ... < c_n$,
+y en cada intervalo abierto $(c_k, c_{k+1})$ es constante, teniendo discontinuidades de salto en los puntos $c_k$.
+Informalmente, una función escalonada es aquella cuya gráfica tiene la forma de una escalera o una serie
+de escalones que no necesariamente deben ser crecientes al ser dibujada. El ejemplo más común
+de función escalonada es la función parte entera. Otras funciones escalonadas son la función
+unitaria de Heaviside o función escalón unitario, y la función signo ver figura \ref{escalon}.
+\begin{figure}
+ \includegraphics[scale=.4]{escalon}\caption{Función escalonada (floor)}\label{escalon}
+\end{figure}
+
+\begin{example} \label{dos} (figura \ref{escalon2}):
+\begin{equation}
+ s:[-1,5]\subseteq \mathbb{R} \rightarrow \mathbb{R}
+\end{equation}
+El dominio $\mathcal{D}$ es el intervalo cerrado $[-1,5]$
+\begin{equation}
+ s(x):=
+ \begin{cases}
+  1&-1\leq x<1\\
+  -1&1\leq x<2\\
+  3&2\leq x<4\\
+  2&4\leq x<5
+ \end{cases}
+\end{equation}
+\begin{figure}
+ \includegraphics[scale=.27]{Escalonada}\caption{Otro ejemplo de función escalonada}\label{escalon2}
+\end{figure}
+\end{example}
+
+\cite{cd14}
 \section{Operaciones con funciones: adición, multiplicación, división y composición.}
+Ya que una función es una variable tiene entonces un valor variable. Con ese valor se pueden hacer las 
+operaciones aritméticas normales con otros valores, y por lo tanto otras funciones, así como la función 
+de composición, la cual es usar el valor de la función como variable independiente de otra función.
+\subsection{Adición}
+\subsection{Multiplicación}
+\subsection{División}
+\subsection{Composición.}
+
 \section{Función inversa.}
 \section{Función implícita.}
 \section{Otro tipo de funciones.}
 
-Límites y continuidad.
-Noción de límite.
-Definición de límite de una función.
-Propiedades de los límites.
-Cálculo de límites.
-Límites laterales.
-Límites infinitos y límites al infinito.
-Asíntotas.
-Continuidad en un punto y en un intervalo.
-Tipos de discontinuidades.
-Derivadas
-Interpretación geométrica de la derivada.
-Incremento y razón de cambio.
-Definición de la derivada de una función.
-Diferenciales.
-Cálculo de derivadas.
-Regla de la cadena.
-Derivada de funciones implícitas.
-Derivadas de orden superior.
-Aplicaciones de la derivada.
-Recta tangente y recta normal a una curva en un punto.
-Teorema de Rolle y teoremas del valor medio.
-Función creciente y decreciente.
-Máximos y mínimos de una función.
-Criterio de la primera derivada para máximos y mínimos.
-Concavidades y puntos de inflexión.
-Criterio de la segunda derivada para máximos y mínimos.
-Análisis de la variación de una función. Graficación.
-Problemas de optimización y de tasas relacionadas.
-Cálculo de aproximaciones usando diferenciales.
-La regla de L’Hôpital.
+\chapter{Límites y continuidad.}
+\section{Noción de límite.}
+\section{Definición de límite de una función.}
+\section{Propiedades de los límites.}
+\section{Cálculo de límites.}
+\section{Límites laterales.}
+\section{Límites infinitos y límites al infinito.
+Asíntotas.}
+\section{Continuidad en un punto y en un intervalo.}
+\section{Tipos de discontinuidades.}
+\chapter{Derivadas}
+\section{Interpretación geométrica de la derivada.}
+\section{Incremento y razón de cambio.}
+\section{Definición de la derivada de una función.}
+\section{Diferenciales.}
+\section{Cálculo de derivadas.}
+\section{Regla de la cadena.}
+\section{Derivada de funciones implícitas.}
+\section{Derivadas de orden superior.}
+\chapter{Aplicaciones de la derivada.}
+\section{Recta tangente y recta normal a una curva en un punto.}
+\section{Teorema de Rolle y teoremas del valor medio.}
+\section{Función creciente y decreciente.}
+\section{Máximos y mínimos de una función.}
+\section{Criterio de la primera derivada para máximos y mínimos.}
+\section{Concavidades y puntos de inflexión.}
+\section{Criterio de la segunda derivada para máximos y mínimos.}
+\section{Análisis de la variación de una función. Graficación.}
+\section{Problemas de optimización y de tasas relacionadas.}
+\section{Cálculo de aproximaciones usando diferenciales.}
+\section{La regla de L’Hôpital.}
 
 
 
