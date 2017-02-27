@@ -417,19 +417,24 @@ $x_1 = -1$ y $x_2 = 5/4$
 Obtenemos los 3 intervalos. Evaluamos un elemento de cada intervalo para identificar cuales hacen
 verdadera a la desigualdad
 
-Del intervalo (-∞ , -1] evaluaremos el -3
--4(-3)2 + (-3) + 5 ≥ 0
--34 ≥ 0 FALSO
+Del intervalo $(-\infty , -1]$ evaluaremos el $-3$
+$$-4(-3)2 + (-3) + 5 \leq 0$$
 
-Del intervalo [-1 , 5/4] evaluaremos el 1
--4(1)2 + 1 + 5 ≥ 0
-2 ≥ 0 VERDADERO
+$-34 \geq 0$ FALSO
 
-Del intervalo [5/4 , ∞) evaluaremos el 2
--4(2)2 + 2 + 5 ≥ 0
--9 ≥ 0 FALSO
+Del intervalo $[-1 , 5/4]$ evaluaremos el $1$
+$$-4(1)2 + 1 + 5 ≥ 0$$
 
-La solución de la desigualdad es entonces: [-1 , 5/4]
+
+$2 \geq 0$ VERDADERO
+
+Del intervalo $[5/4 , \infty )$ evaluaremos el 2
+$$-4(2)2 + 2 + 5 \geq 0$$
+
+
+$-9 ≥ 0$ FALSO
+
+La solución de la desigualdad es entonces: $[-1 , 5/4]$
 \cite{cd3}
 
 
@@ -728,11 +733,64 @@ El dominio $\mathcal{D}$ es el intervalo cerrado $[-1,5]$
 Ya que una función es una variable tiene entonces un valor variable. Con ese valor se pueden hacer las 
 operaciones aritméticas normales con otros valores, y por lo tanto otras funciones, así como la función 
 de composición, la cual es usar el valor de la función como variable independiente de otra función.
-\subsection{Adición}
-\subsection{Multiplicación}
-\subsection{División}
-\subsection{Composición.}
 
+El dominio de la función resultante de operaciones entre funciones será la intersección de los
+dominios de entrada de cada una de las funciones, ya que cada $x$ que sea evaluado tendrá su salida y solo cuando sea
+el mismo $x$ evaluado en las funciones se podrán unir sus resultados con el operador correspondiente.
+$$f:\mathcal{D}_f \rightarrow \mathcal{R}_f,\;\;g:\mathcal{D}_g \rightarrow \mathcal{R}_g
+\Rightarrow \mathcal{D}_{f+g}= \mathcal{D}_f \cap \mathcal{D}_g$$
+El codominio de la función resultante será la unión de los rangos, aunque no siempre ese codominio
+será el rango de la función resultante.
+$$\mathcal{C}_{f+g}=\mathcal{R}_f \cup \mathcal{R}_g$$
+
+
+\subsection{Adición y substracción}
+La suma de dos funciones está denotada por $g(x)$ y $f(x)$ es $g + f$.
+Consideremos las dos funciones $g$ y $f$:
+\begin{equation}\label{gf}
+ g(x)=x^2,\;\;\;  f(x)=3x+12
+\end{equation}
+
+
+
+La suma de las dos funciones producirán una sola función como,
+
+$$(g+f)(x)=g(x)+f(x)=x^2+3x+12$$
+ Si fuera una resta entonces lo que se hace es invertir los signos a la función que se está sustrayendo
+ $$(g-f)(x)=g(x)-f(x)=x^2-3x-12$$
+ 
+ La suma de dos funciones se puede considerar graficamente como montar una función encima de otra, la resta es 
+ como montarlas pero la segunda está invertida.
+
+\subsection{Multiplicación y división}
+La multiplicación de dos funciones se representa $(g\cdot f)(x)$ que es el multiplicar los resultados de ambas 
+funciones entre si, con respecto al valor de $x$ (en cada valor de $x$). 
+$$(g\cdot f)(x)=g(x)\cdot f(x)$$
+Por ejemplo usando la función \ref{gf} la multiplicación de $g$ por $f$ daría:
+ $$(g\cdot f)(x)=g(x)\cdot f(x)=x^2(3x+12)=3x^3+12x^2$$
+ ya que se siguen las reglas de la multiplicación.
+ 
+ Cuando se multiplica una función por si misma es como si se elevara al cuadrado y se representa con un super índice
+ como se ve a continuación para el mismo caso \ref{gf}:
+ $$g\cdot g (x)=g^2(x)=x^2 \cdot x^2=x^4 $$
+ 
+ Para dividir se siguen las mismas reglas que la multiplicación elevando a la $-1$ la función que divide.
+ Así siguiendo con el ejemplo \ref{gf}:
+ 
+ $$(g / f)(x)=g(x) / f(x)=g(x) \cdot f^{-1}(x)= \frac{x^2}{(3x+12)}$$
+ 
+
+\subsection{Composición.}
+Composición de 2 funciones es cuando la salida de una función es la entrada de otra función. Se simboliza 
+$f\circ g(x)$
+o también su equivalente $f(g(x))$. 
+
+El dominio de la función es el dominio de la primera función cuyo rango da la intersección del
+rango de la primera función con el dominio de la segunda función.
+$$g:\mathcal{D}_g\rightarrow \mathcal{R}_g$$
+$$f:\mathcal{D}_f\rightarrow \mathcal{R}_f$$
+$$f\circ g:\mathcal{R}_g \cap \mathcal{D}_f=\mathcal{D}_{f\circ g}\rightarrow \mathcal{R}_{f\circ g}\subseteq \mathcal{R}_f \subseteq
+\mathcal{C}_f$$
 \section{Función inversa.}
 \section{Función implícita.}
 \section{Otro tipo de funciones.}
