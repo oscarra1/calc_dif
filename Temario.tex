@@ -585,12 +585,16 @@ $$x\in \mathbb{R}$$
 Las funciones pueden ser clasificadas principalmente en tres categorías basadas en como 
 las imágenes y sus argumentos están relacionados, a saber en funciones inyectivas, sobreyectivas o
  biyectivas.
-
+\subsection{Función inyectiva.}
 Una función es inyectiva, o también llamada función de uno a uno, cuando conserva la distinción,
 es decir, no asigna distintos elementos en su dominio al mismo elemento en su co-dominio.
 En otras palabras, podemos decir que hay una asignación uno a uno entre los elementos del dominio
-y el co-dominio de la función.
-A la luz de la declaración anterior, podemos concluir que hay una salida diferente para cada entrada de la función.
+y el co-dominio de la función. Ver figura \ref{inyec}
+\begin{figure}
+\centering
+ \includegraphics[scale=.9]{g39}\caption{Función inyectiva}\label{inyec}
+\end{figure}
+Por lo que se puede concluir que hay una salida diferente para cada entrada de la función.
 Matemáticamente:
 
 La función $f:\mathcal{D}\longrightarrow \mathcal{R}$ es inyectiva si para
@@ -606,13 +610,16 @@ En términos matemáticos, una función inyectiva es una función $f: A\rightarr
 de B es la imagen de dos o más elementos diferentes de A bajo f. En terminología gráfica, si la curva
 que representa la función es cortada por cualquier línea horizontal una sola vez, entonces tal
 función es llamada función inyectiva.
-
+\subsection{Función suprayectiva}
 Una función sobreyectiva, suprayectiva o exhaustiva  también conocida con el nombre de sobre función,
 es aquella en la cual
 podemos obtener todos los números en el codominio de la función por la aplicación de la correspondencia
- función f a un número en el dominio de la función. En tal escenario, pueden
-existir varios elementos en el dominio de la función que se asignen al mismo elemento
-en el co-dominio de la función.
+de la función $f$ a uno o más números en el dominio de la función. Por lo que debe existir al menos un elemento en
+el dominio para cada elemento en el codominio. Ver figura \ref{supra}.
+\begin{figure}
+\centering
+ \includegraphics[scale=.9]{g40}\caption{Función suprayectiva}\label{supra}
+\end{figure}
 
 En términos matemáticos, una función sobreyectiva 
 es una función $f:\mathcal{D}\longrightarrow \mathcal{R}\subseteq\mathcal{C}$ donde 
@@ -627,6 +634,14 @@ Con este fin uno puede tomar arbitrariamente
 cualquier elemento del codominio y demostrar que este existe como la imagen de algún elemento
 en el dominio de la función.\cite{cd9}
 $$\forall x,\exists f(x)\in \mathcal{C}$$
+\subsection{Función biyectiva.}
+Una función es biyectiva cuando es inyectiva y sobreyectiva al mismo tiempo, lo que significa que todos los 
+elementos del codominio están representados en el dominio pero le corresponde solo uno en el dominio para cada
+elemento del codominio. Ver figura \ref{biyec}
+\begin{figure}
+\centering
+ \includegraphics[scale=.9]{g41}\caption{Función biyectiva}\label{biyec}
+\end{figure}
 \section{Funciones algebraicas: polinomiales y racionales.}
 Funciones algebraicas son aquellas que pueden ser representadas con las operaciones aritméticas sumas, restas,
 multiplicaciones y divisiones finitas entre variables y constantes.
@@ -771,11 +786,11 @@ Por ejemplo usando la función \ref{gf} la multiplicación de $g$ por $f$ daría
  ya que se siguen las reglas de la multiplicación.
  
  Cuando se multiplica una función por si misma es como si se elevara al cuadrado y se representa con un super índice
- como se ve a continuación para el mismo caso \ref{gf}:
+ como se ve a continuación para la fórmula \ref{gf}:
  $$g\cdot g (x)=g^2(x)=x^2 \cdot x^2=x^4 $$
  
  Para dividir se siguen las mismas reglas que la multiplicación elevando a la $-1$ la función que divide.
- Así siguiendo con el ejemplo \ref{gf}:
+ Así siguiendo con la fórmula \ref{gf}:
  
  $$(g / f)(x)=g(x) / f(x)=g(x) \cdot f^{-1}(x)= \frac{x^2}{(3x+12)}$$
  
@@ -792,11 +807,82 @@ $$f:\mathcal{D}_f\rightarrow \mathcal{R}_f$$
 $$f\circ g:\mathcal{R}_g \cap \mathcal{D}_f=\mathcal{D}_{f\circ g}\rightarrow \mathcal{R}_{f\circ g}\subseteq \mathcal{R}_f \subseteq
 \mathcal{C}_f$$
 \begin{figure}
- \includegraphics[scale=.27]{Composicion}\caption{Otro ejemplo de función escalonada}\label{comp}
+ \includegraphics[scale=.9]{comp1}\caption{Composición de 2 funciones $f\circ g$}\label{comp}
 \end{figure}
 \section{Función inversa.}
+Función inversa también llamada función recíproca es la función que sigue la ruta contraria, opuesta o inversa
+de otra, de modo que ambas son inversas 
+con respecto a la otra. Seguir la ruta contraria en este caso significa que la(s) variable(s) dependiente(s)
+se vuelven variables independientes y viceversa o en otras palabras el valor de la función es
+la variable independiente de la inversa al mismo tiempo que la variable independiente de la función
+se vuelve la variable dependiente de la función también llamado el valor de la función. 
+En palabras simples las salidas de la función se vuelven sus 
+entradas y sus entradas se vuelven sus salidas. Ver figura \ref{inv}. como se puede ver en la misma si la figura 
+no es biyectiva, entonces puede haber problemas, ya que si la función no es suprayectiva entonces al invertirse la 
+función el nuevo dominio ya no abarcará los elementos del codominio original que no están representados en el 
+dominio original, en este caso $C$, y también si la función no es inyectiva entonces algún elemento del codominio 
+original puede tener 2 o más elementos correspondientes en el dominio original, por lo que al invertirse la función
+se tienen que eliminar los elementos del nuevo codominio hasta que tengan un solo elemento correspondiente 
+en el dominio. Si esto último no se hace entonces no se puede llamar a la relación resultante función.
+\begin{figure}
+\centering
+ \includegraphics[scale=2]{g42}\caption{Función inversa}\label{inv}
+\end{figure}
+
+La función inversa tiene la misma fórmula que la fórmula original pero por convención
+está despejada la variable dependiente. De esa forma está despejada la variable dependiente (la función) de 
+forma explícita.
+
+La notación de la función inversa es el nombre de la función con superíndice $-1$: $f^{-1}(x)$ o $f^{-1}$ 
+pero hay que distinguirla del caso donde se está hablando de una división ($1/f(x)$)
+ \subsection*{Ejemplos y su inversa}
+ \begin{enumerate}
+  \item $f(x):=y=3x$ y su inversa: $g(x)=y^{-1}(x)=x/3;$
+  \item $f(x):=y=-2x+3$ y su inversa: $x=\frac{y-3}{-2};$
+  \item $f(x):=x^2$,  $f^{-1}(x)=\sqrt{x}$
+  \item $f(x)=sen(x)$, $f^{-1}=sen^{-1}(x)=arc\;sen(x)$
+ \end{enumerate}
+ Las últimas dos funciones de ejemplo no son inyectivas por lo que al invertirse deben de limitarse sus dominios a 
+ los valores positivos de la raíz cuadrada y al intervalo de $[-\pi,\pi ]$ respectivamente.
+ Las funciones inversas cumplen la siguiente igualdad:
+ $$f^{-1}(f(x))=f(f^{-1}(x))=x$$
+ 
 \section{Función implícita.}
+Se llama función explícita cuando la fórmula que define a la función no muestra la variable dependiente (el valor
+de la función) de forma explícita, esto es separada y con valor a definir dependiendo del valor de la
+variable independiente. Al no mostrar de forma explícita la variable dependiente separada, la fórmula muestra 
+la interdependencia entre 2 o más variables pero sin enfatizar que el valor de la primera dependa del valor de la 
+segunda o que el valor de la segunda dependa de la primera, por lo que habrá que escoger cual es el valor o valores
+dependientes, el valor de la función, y cual el valor o valores independientes. Por ejemplo:
+$$x^2y-7=0$$
+en este caso se pueden deducir 2 funciones, una que sea función de $x$ y otra que sea función dependiente del valor de $y$.
+$$f(y):=x(y)=x_y=x=\sqrt{\frac{7}{y}};\;\;g(x):=y(x)=y_x=y=\frac{7}{x^2}$$
+Siempre al manejar funciones en las que se manejen cocientes hay que cuidar que el valor del divisor no pueda ser $0$
+$$x, y\neq 0 $$
 \section{Otro tipo de funciones.}
+\subsection{Secuencias Infinitas}
+ Las Secuencias Infinitas son funciones con Dominio en los Números Naturales y rango en los Números Reales:
+Considere un conjunto $M$, una función $f: \mathbb{N}\rightarrow \mathbb{R}$ 
+de la secuencia de números de N esta es conocida como función de sucesiones.
+El dominio de tales funciones se limita sólo a los números naturales.
+
+Las convenciones utilizadas para referirse a tales secuencias son:
+$$a^n |^{\infty}_{n=1}$$
+$$a_n, n\in J$$
+$$a_1,a_2,a_3,...$$
+$$a_n=f(n)$$
+Como ejemplo podemos tener los números naturales, o los números primos.
+$$\mathbb{N}:=\{1,2,3,4,...\}$$
+$$M=\{1,2,3,5,7,11,13,17,...\}$$
+en este último caso $f_5=f(5)=7$.
+
+\subsection{Recurrencias}
+La función está definida por el término anterior o posterior de una secuencia, por ejemplo la serie de 
+fibonacci y el número de movimientos para resolver las torres de Hanoi. En estas dos funciones $f(1):=1$ 
+y en la de fibonacci $f(2):=2$
+
+$$f_n:=f_{n-2}+f_{n-1}$$
+$$f_n:=2f_{n-1}+1$$
 
 \chapter{Límites y continuidad.}
 \section{Noción de límite.}
