@@ -1,0 +1,62 @@
+\documentclass[oneside,spanish,letter]{extbook}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{babel}
+\addto\shorthandsspanish{\spanishdeactivate{~<>.}}
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+%%\usepackage[pagebackref,ocgcolorlinks,pdfborderstyle=U]{hyperref}
+%\usepackage[pagebackref,ocgcolorlinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{commath}
+
+\usepackage{hyperref}
+\usepackage{mathrsfs}
+
+
+\newtheorem{example}{Ejemplo}[section]% Example
+\newtheorem{definition}{Definición}[section]% Example
+
+\usepackage[backend=biber]{biblatex}
+\bibliography{EDA-biblio}
+
+\begin{document}
+
+\title{Cálculo Diferencial}
+
+\author{Oscar Rendón Aldaraca}
+
+\maketitle
+
+%\tableofcontents
+%\listoffigures
+%\listoftables
+\chapter{Límites}
+
+
+\section{Ejercicios}
+\begin{enumerate}
+ \item $$\underset{x\rightarrow \infty}{l\acute{\imath}m} \frac{4x^3+2x^2+3}{3x^2+3}=$$
+ \item $$\underset{x\rightarrow \infty}{l\acute{\imath}m} \frac{-3x^3+2x^2-2}{3x+3}=$$
+\end{enumerate}
+
+
+%\bibliographystyle{}
+
+
+
+%\addbibresource{EDA-biblio}
+%\bibliographystyle{plain}
+
+\printbibliography
+
+
+%\bibliography{
+
+\end{document}
+
