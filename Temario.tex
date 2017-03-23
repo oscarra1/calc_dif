@@ -5,16 +5,22 @@
 \setcounter{tocdepth}{3}
 \usepackage{babel}
 \addto\shorthandsspanish{\spanishdeactivate{~<>.}}
+
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{amsmath}
+
 %%\usepackage[pagebackref,ocgcolorlinks,pdfborderstyle=U]{hyperref}
 %\usepackage[pagebackref,ocgcolorlinks]{hyperref}
 \usepackage{graphicx}
 \usepackage{commath}
 
 \usepackage{hyperref}
+\usepackage{mathrsfs}
+
 
 \newtheorem{example}{Ejemplo}[section]% Example
+\newtheorem{definition}{Definición}[section]% Example
 
 \usepackage[backend=biber]{biblatex}
 \bibliography{EDA-biblio}
@@ -567,9 +573,9 @@ entonces el rango será $\{1,4,9,...\}$
 El codominio es el conjunto de donde salen los valores del rango , en este caso el rango es subconjunto
 de los números $\mathbb{N}$ por lo que tanto el rango y los números naturales son codominio de la función $f$.
 $$f:\mathbb{N}\longrightarrow \mathbb{N}$$
-$$\mathcal{D}=\mathbb{N};\;\;\mathcal{C}=\mathbb{N};\;\;\mathcal{R}=\{1,4,9,16,...\}; $$
+$$\mathscr{D}=\mathbb{N};\;\;\mathscr{C}=\mathbb{N};\;\;\mathscr{R}=\{1,4,9,16,...\}; $$
 y en este ejemplo
-$$\mathcal{R} \subset \mathcal{C};\;\; \mathcal{R} \neq \mathcal{C}$$
+$$\mathscr{R} \subset \mathscr{C};\;\; \mathscr{R} \neq \mathscr{C}$$
 \section{Función real de variable real y su representación gráfica.}
 Función real de variable real es la función cuyo resultado es un número que pertenece a los números reales y cuya variable
 independiente pertenece a los números reales, en otras palabras su dominio son los reales y su rango también son los reales.
@@ -587,7 +593,7 @@ las imágenes y sus argumentos están relacionados, a saber en funciones inyecti
  biyectivas.
 \subsection{Función inyectiva.}
 Una función es inyectiva, o también llamada función de uno a uno, cuando conserva la distinción,
-es decir, no asigna distintos elementos en su dominio al mismo elemento en su co-dominio.
+es decir, no asigna distintos elementos de su dominio al mismo elemento de su co-dominio.
 En otras palabras, podemos decir que hay una asignación uno a uno entre los elementos del dominio
 y el co-dominio de la función. Ver figura \ref{inyec}
 \begin{figure}
@@ -597,8 +603,8 @@ y el co-dominio de la función. Ver figura \ref{inyec}
 Por lo que se puede concluir que hay una salida diferente para cada entrada de la función.
 Matemáticamente:
 
-La función $f:\mathcal{D}\longrightarrow \mathcal{R}$ es inyectiva si para
-$\forall x,y \in \mathcal{D}, x \neq y \Rightarrow f(x) \neq f(y) $
+La función $f:\mathscr{D}\longrightarrow \mathscr{R}$ es inyectiva si para
+$\forall x,y \in \mathscr{D}, x \neq y \Rightarrow f(x) \neq f(y) $
 
 La notación utilizada para representar una función inyectiva es la flecha con cola de pescado,
 es decir, $f: A\rightarrowtail B$, donde $f$ es una función de A a B. Tal función asegura una imagen
@@ -622,18 +628,18 @@ el dominio para cada elemento en el codominio. Ver figura \ref{supra}.
 \end{figure}
 
 En términos matemáticos, una función sobreyectiva 
-es una función $f:\mathcal{D}\longrightarrow \mathcal{R}\subseteq\mathcal{C}$ donde 
-el rango de la función es igual al codominio de la función $\mathcal{R}=\mathcal{C}$.
+es una función $f:\mathscr{D}\longrightarrow \mathscr{R}\subseteq\mathscr{C}$ donde 
+el rango de la función es igual al codominio de la función $\mathscr{R}=\mathscr{C}$.
 Una consecuencia de lo anterior es que la cardinalidad del dominio es mayor o igual a la cardinalidad del rango y
 del codominio.
-$$card(\mathcal{D})\leq card(\mathcal{R})=card(\mathcal{C})$$
+$$card(\mathscr{D})\leq card(\mathscr{R})=card(\mathscr{C})$$
 
 Por lo tanto, con el fin de demostrar que una función es una función sobreyectiva,
-debemos probar que $\mathcal{R}$ es un subconjunto propio de $\mathcal{C}$.
+debemos probar que $\mathscr{R}$ es un subconjunto propio de $\mathscr{C}$.
 Con este fin uno puede tomar arbitrariamente
 cualquier elemento del codominio y demostrar que este existe como la imagen de algún elemento
 en el dominio de la función.\cite{cd9}
-$$\forall x,\exists f(x)\in \mathcal{C}$$
+$$\forall x,\exists f(x)\in \mathscr{C}$$
 \subsection{Función biyectiva.}
 Una función es biyectiva cuando es inyectiva y sobreyectiva al mismo tiempo, lo que significa que todos los 
 elementos del codominio están representados en el dominio pero le corresponde solo uno en el dominio para cada
@@ -728,7 +734,7 @@ unitaria de Heaviside o función escalón unitario, y la función signo ver figu
 \begin{equation}
  s:[-1,5]\subseteq \mathbb{R} \rightarrow \mathbb{R}
 \end{equation}
-El dominio $\mathcal{D}$ es el intervalo cerrado $[-1,5]$
+El dominio $\mathscr{D}$ es el intervalo cerrado $[-1,5]$
 \begin{equation}
  s(x):=
  \begin{cases}
@@ -752,11 +758,11 @@ de composición, la cual es usar el valor de la función como variable independi
 El dominio de la función resultante de operaciones entre funciones será la intersección de los
 dominios de entrada de cada una de las funciones, ya que cada $x$ que sea evaluado tendrá su salida y solo cuando sea
 el mismo $x$ evaluado en las funciones se podrán unir sus resultados con el operador correspondiente.
-$$f:\mathcal{D}_f \rightarrow \mathcal{R}_f,\;\;g:\mathcal{D}_g \rightarrow \mathcal{R}_g
-\Rightarrow \mathcal{D}_{f+g}= \mathcal{D}_f \cap \mathcal{D}_g$$
+$$f:\mathscr{D}_f \rightarrow \mathscr{R}_f,\;\;g:\mathscr{D}_g \rightarrow \mathscr{R}_g
+\Rightarrow \mathscr{D}_{f+g}= \mathscr{D}_f \cap \mathscr{D}_g$$
 El codominio de la función resultante será la unión de los rangos, aunque no siempre ese codominio
 será el rango de la función resultante.
-$$\mathcal{C}_{f+g}=\mathcal{R}_f \cup \mathcal{R}_g$$
+$$\mathscr{C}_{f+g}=\mathscr{R}_f \cup \mathscr{R}_g$$
 
 
 \subsection{Adición y substracción}
@@ -802,10 +808,10 @@ o también su equivalente $f(g(x))$.
 
 El dominio de la función es el dominio de la primera función cuyo rango da la intersección del
 rango de la primera función con el dominio de la segunda función. Ver figura \ref{comp}
-$$g:\mathcal{D}_g\rightarrow \mathcal{R}_g$$
-$$f:\mathcal{D}_f\rightarrow \mathcal{R}_f$$
-$$f\circ g:\mathcal{R}_g \cap \mathcal{D}_f=\mathcal{D}_{f\circ g}\rightarrow \mathcal{R}_{f\circ g}\subseteq \mathcal{R}_f \subseteq
-\mathcal{C}_f$$
+$$g:\mathscr{D}_g\rightarrow \mathscr{R}_g$$
+$$f:\mathscr{D}_f\rightarrow \mathscr{R}_f$$
+$$f\circ g:\mathscr{R}_g \cap \mathscr{D}_f=\mathscr{D}_{f\circ g}\rightarrow \mathscr{R}_{f\circ g}\subseteq \mathscr{R}_f \subseteq
+\mathscr{C}_f$$
 \begin{figure}
  \includegraphics[scale=.9]{comp1}\caption{Composición de 2 funciones $f\circ g$}\label{comp}
 \end{figure}
@@ -893,19 +899,180 @@ $$s(n):=\underset{i=1}{\overset{n}{\sum}} \sqrt{i}$$
 \chapter{Límites y continuidad.}
 En matemáticas, cuando el número de lados inscritos y circunscritos de un polígono aumenta, su área se
 aproxima a un valor fijo llamado límite y este límite es el área del círculo. Por tanto, podemos decir
-que si $n$ representa el número de lados de un polígono y el área de polígonos inscritos
-y circunscritos son $A_1$ y $A_2$ respectivamente, entonces 
-$$\underset{n\rightarrow\infty}{lim}A_1=Área\;\;\;del\;\;\;círculo$$
-$$\underset{n\rightarrow\infty}{lim}A_2=Área\;\;\;del\;\;\;círculo$$
+que si $n$ representa el número de lados de un polígono y $A_p$ el área del polígono inscrito entonces el área
+del círculo es igual al:
+$$\underset{n\rightarrow \infty}{lim}A_p=\acute{A}rea\;\;\;del\;\;\;c\acute{i}rculo$$
+Ver figura \ref{cir}
+
+\begin{figure}
+\centering
+ \includegraphics[scale=2]{path4271}\caption{Área de un círculo}\label{cir}
+\end{figure}
+
 \section{Noción de límite.}
+Aproximación hacia un punto concreto de una sucesión o una función, a medida que los parámetros de esa
+sucesión o función se acercan a un determinado valor. \cite{cd15}
+$$f(x):=\overset{x}{\underset{i=1}{\sum}}\frac{9}{10^i}$$
+$$\underset{n\rightarrow \infty}{lim}f(n)=1$$
+
 \section{Definición de límite de una función.}
-\section{Propiedades de los límites.}
-\section{Cálculo de límites.}
+El límite de una función es el valor $L$ que parece tomar $f(x)$ para cierto valor de la $x$ llamado $x_0$. 
+
+Cuando una función $f(x)$ toma valores muy próximos a $L$ cada vez que tomamos una $x$ suficientemente cerca
+de $x_0$ se dice que el límite de la función $f(x)$
+es $L$ cuando $x$ tiende a $x_0$,\cite{cd16} y se escribe:
+$$\underset{x\rightarrow x_o}{lim}f(x)=L$$
+Más formalmente:
+\begin{definition}\label{lim}\cite{anamat1} El número $L$ se dice que es el límite de la función $f$ en $x_0$ si para cada número
+$\varepsilon >0$ existe un número $\delta >0$ tal que siempre que $x$ esté en el dominio de $f$ y
+$$0<|x-x_0|<\delta\Rightarrow |f(x)-L|<\varepsilon$$
+Las notaciones 
+$$\underset{x\rightarrow x_o}{lim}f(x)=L\;\;\;\;y\;\;\;\underset{x_o}{lim}f=L$$
+se usan para denotar que $L$ es el límite de $f$ en $x_0$
+\end{definition}
+
+\section{Propiedades de los límites\cite{cd9}.}
+Los límites tienen ciertas propiedades que los hacen útiles para facilitar o resolver
+ciertos problemas matemáticos.
+
+
+
+
+\begin{enumerate}
+ \item Se pueden hacer operaciones algebraicas antes o después de calcular los límites y el resultado no será afectado.
+ $$lim(f+g)=lim(x)+lim(y)$$
+ \item El límite de una función siempre es único.
+ $$lim\;f(x)=L,\; L=x,\; x\ne y \Rightarrow L\ne y$$
+ \item El límite de la suma, resta o multiplicación de 2 funciones es igual a la suma, resta o multiplicación
+ de los límites de las funciones.
+ \item El límite de la división de 2 funciones es igual a la división de los límites de las funciones pero cuidando que
+ el valor del divisor no sean cero.
+ $$lim\left(\frac{f(x)}{g(x)}\right)=\frac{lim(f(x))}{lim(g(x))};\;\;g(x)\ne 0$$
+ \item Una constante dentro la función a la que se le está calculando el límite puede ser sacada para multiplicar el
+ límite sin afectar el resultado.
+ $$lim(k\, f(x))=k\, lim( f(x))$$
+ \item El límite de una constante es la misma constante.
+ $$lim(k)=k$$
+ \item Límite de una función exponencial es igual a la base elevada al límite del exponente
+ $$lim (k^{f(x)})=k^{lim(f(x))}$$
+ \item Límite de una función logarítmica
+ $$lim\;log(f(x))=log\lim(f(x))$$
+ \item Teorema de estricción, también conocido como teorema del sandwich. Si se tienen  las funciones $f,g,h$ con dominio
+ en $\mathscr{D}$ y quizás menos el punto $a$ entonces si 
+ $$g(x)\leqslant f(x)  \leqslant h(x) $$ y
+ $$g(x)=L\,,\;h(x)=L$$ entonces
+ $$f(x)=L$$
+ 
+\end{enumerate}
+
+\section{Cálculo de límites.\cite{cd9}}
+Todos nosotros hemos leído en las matemáticas básicas que si el valor del denominador es cero, entonces obtendremos un
+valor indefinido como producto. Pero en el caso del cálculo, podemos obtener una solución aunque el 
+valor del denominador sea cero.
+
+Para entender el concepto, mire el ejemplo dado a continuación, $f(x) = x^3/ x$
+
+Si lo resolvemos tenemos $f(x) = x^2$ como respuesta. El gráfico de esta función es una parábola,
+como se muestra en la figura \ref{x2},
+\begin{figure}
+\centering
+ \includegraphics[scale=0.5]{x2}\caption{x al cubo entre x}\label{x2}
+\end{figure}
+
+
+Ahora bien, si $x$ alcanza el valor de cero en algún punto entonces tenemos una salida indefinida, al estar indefinido
+el valor de $\frac{0}{0}x^2$, utilizando el cálculo obtenemos el valor de la ecuación para un valor algo más grande 
+ y para un valor algo menor que cero. Este es el concepto detrás de los límites.
+ 
+El concepto de límite es que al llegar más y más cerca de un valor específico de $x$, el valor de la función
+también comienza a resolverse en torno a un valor específico. De este modo podemos calcular el valor de la función
+para algunos valores que están muy cerca de cero.
+
+Esto proporcionará un resultado de valor aproximado para la función dada y por tanto no obtendremos un
+valor indefinido como valor de salida de la función.
+Otro ejemplo:
+
+\begin{align*}
+   \underset{x\rightarrow 2}{lim} (3x^2-4x+5)& = \underset{x\rightarrow 2}{lim}(3x^2) - \underset{x
+   \rightarrow 2}{lim} (4x) + \underset{x\rightarrow 2}{lim} (5)\\
+	& = 3\underset{x\rightarrow 2}{lim} (x^2) - 4\underset{x\rightarrow 2}{lim} (x) + 5\\
+	& = 3(2)2- 4(2) + 5\\
+	& = 12-8 + 5=9	
+\end{align*}
+
 \section{Límites laterales.}
-\section{Límites infinitos y límites al infinito.
-Asíntotas.}
+Los límites son aproximaciones de los valores de las funciones, cuando el valor de la $x_0$ de acerca al valor de $x$ de
+una manera arbitraria pero tan cercana como sea necesario. La forma de acercarse al valor de $x_0$ es desde un valor inferior, 
+llamado acercamiento desde la izquierda, o desde un valor superior, conocido como acercamiento desde la derecha. Ambos 
+acercamientos se conocen como acercamientos laterales cuando la variable independiente es un escalar, ya que la convención
+para la variable independiente es colocarla en el eje de las abscisas, y por lo tanto su desplazamiento es lateral desde la 
+derecha o izquierda. Se distingue el acercamiento desde la derecha del acercamiento desde la izquierda, agregándole el signo + a la derecha de
+$x$ cuando el acercamiento a $x$ se realiza desde la derecha y un signo - a la derecha de $x$ cuando el acercamiento se
+realiza desde la izquierda.
+En el ejemplo dado en la figura \ref{lld} el límite acercándose desde la izquierda ($x<x_0$) es distinto 
+al límite acercándose desde la derecha ($x>x_0$): $f(x\rightarrow x_0+) \neq f(x \rightarrow x_0-)$. Por lo tanto,
+el límite cuando $x\rightarrow x0$ no existe. En este caso $f(x)=\underset{x\rightarrow x_0+}{lim}f(x)$
+\begin{figure}
+\centering
+ \includegraphics[scale=1.5]{text24}\caption{Ejemplo de límites laterales distintos}\label{lld}
+\end{figure}
+
+\section{Límites infinitos y límites al infinito.}
+Infinito, la palabra aparece regularmente en los conceptos Matemáticos, esta es básicamente sólo una idea
+y no un número. Una cantidad extremadamente grande la cual no está definida puede ser considerada como infinito.
+
+Cuando se calcula el límite de una fracción, en la que el numerador se acerca a una cantidad positiva o negativa,
+si el denominador se mueve hacia 0, entonces en ese caso se dice que el límite es inexistente.
+Con el fin de explicar el comportamiento de tales funciones, decimos que
+$$\underset{x\rightarrow x_0}{lim}f(x)=\infty$$
+aunque el límite no existe ya que es un número indefinido. No es el mismo caso cuando el límite de la función de $x$ 
+cuando $x$ tiende a infinito, ya que si la función es asintótica a una linea horizontal entonces el límite sí
+existe por ejemplo $\underset{x\rightarrow \infty}{lim}(\frac{5x+7}{x})$ ya que en este caso $x$ se dirige hacia
+infinito cualquier cantidad y $f(x)$ se acerca a 5. 
+\section{Asíntotas.}
+La asíntota es la recta a la cual se acerca una función asintótica a la misma. Se dice que la función y la recta son asintóticas entre sí o que se van acercando 
+de manera indefinida. Hay tres tipos de asíntotas:
+Horizontales, Verticales y oblicuas\cite{cd17}
+\subsection{Asíntotas Horizontales}
+\label{sec:AH}
+Son las cuales la función que las define es una línea horizontal:
+$$f(x)=k$$
+La funciones asintóticas pueden ser:
+$$f(x)=2$$
+$$g(x)=\frac{2x^2+3}{x^2-1}$$
+$$\overset{x\rightarrow \infty}{lim}g(x)=2$$
+Es este caso $f(x)$ es la recta que es la asíntota y $g(x)$ es la función que se va acercando a 2.
+\subsection{Asíntotas Verticales}
 \section{Continuidad en un punto y en un intervalo.}
+Una función continua es aquella que responde a las variaciones de
+cada valor en la entrada de la función por
+lo que muestra variación no discontinua o de saltos bruscos en la salida de la función.
+
+Una definición formal de una función continua es “Una función $f: X\rightarrow Y$ se dice que es continua,
+si la imagen inversa de todos los conjuntos abiertos en el rango de la función son abiertos en el dominio de la función”.
+
+Para que una función continua sea continua en un punto $P$ específico, debe cumplir tres condiciones:
+
+\begin{enumerate}
+ \item El valor $s$ debe estar en el dominio de la función.
+  $$x, f(x);f:\mathscr{D}\rightarrow\mathscr{R};\;\; x\in \mathscr{D}$$
+ \item la función $f(s)$ debe tener un valor definido.
+ $$f(x)\in \mathscr{R}$$
+ \item Para un punto a en el dominio de la función, 
+$\underset{x\rightarrow x_0+}{lim}f(x) = \underset{x\rightarrow x_0-}{lim}f(x)$ y también  
+$\underset{x\rightarrow x_0}{lim}f(x)=f(x_0)$ 
+\end{enumerate}
+Si alguna de las condiciones falla, se dice que la función es discontinua en el punto donde $r = x$. 
+
 \section{Tipos de discontinuidades.}
+Generalmente, una función discontinua es aquella cuya gráfica no se puede dibujar sin levantar
+ el lápiz. Esto se debe a la existencia de “puntos aislados” o un brinco en la gráfica de la función.
+
+Las discontinuidades se pueden clasificar en varios tipos:
+
+1). La Discontinuidad Asintótica: Esta variedad de la discontinuidad se produce cuando la función
+correspondiente no está conectada a la recta asintótica. 
+
 \chapter{Derivadas}
 \section{Interpretación geométrica de la derivada.}
 \section{Incremento y razón de cambio.}
