@@ -1,5 +1,42 @@
 #!/usr/bin/perl
 
+print "\\documentclass[oneside,spanish,letter]{article}\n";
+print "\\usepackage[T1]{fontenc}\n";
+print "\\usepackage[utf8]{inputenc}\n";
+print "\\setcounter{secnumdepth}{3}\n";
+print "\\setcounter{tocdepth}{3}\n";
+print "\\usepackage{babel}\n";
+print "\\addto\\shorthandsspanish{\\spanishdeactivate{~<>.}}\n\n";
+
+print "\\usepackage{amsfonts}\n";
+print "\\usepackage{amssymb}\n";
+print "\\usepackage{amsmath}\n\n";
+
+print "%%\usepackage[pagebackref,ocgcolorlinks,pdfborderstyle=U]{hyperref}\n";
+print "%\usepackage[pagebackref,ocgcolorlinks]{hyperref}\n";
+print "\\usepackage{graphicx}\n";
+print "\\usepackage{commath}\n\n";
+
+print "\\usepackage{hyperref}\n";
+print "\\usepackage{mathrsfs}\n";
+
+
+print "\\newtheorem{example}{Ejemplo}[section]% Example\n";
+print "\\newtheorem{definition}{Definición}[section]% Example\n\n";
+
+print "\\usepackage[backend=biber]{biblatex}\n";
+print "\\bibliography{EDA-biblio}\n\n";
+
+print "\\begin{document}\n\n";
+
+print "\\title{Cálculo Diferencial}\n\n";
+
+print "\\author{Oscar Rendón Aldaraca}\n\n";
+
+
+
+print "\\section{Ejercicios}\n";
+print"\\begin{enumerate}\n";
 $i=0;
 while ($i<5){
  $exp1=int(rand(4)+2);
@@ -103,4 +140,9 @@ print "\\sqrt[",$exp3,"]{",$sig1,$coef1,"x",$exp1,$sig2,$coef2,"x",$exp2,$sig3,$
 print "}}=\$\$\n";
  $i++
 }
+print " \\end{enumerate}\n ";
 
+
+
+
+print "\\end{document}\n";
