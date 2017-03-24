@@ -1,2 +1,8 @@
 #!/usr/bin/perl
-print " \\item \$\$\\underset\{x\\rightarrow -\\infty\}\{l\\acute\{\\imath\}m\} \\frac\{x^4+2x+2}{5x^2+3\}=\$\$\n";
+$exp1=int(rand(4)+2);
+$exp2=int(rand(4)+2);
+$sig11=int(rand())?"-":"";
+$coef1=int(rand(4))+1;
+if($coef1==1){$coef1=""}
+print " \\item \$\$\\underset\{x\\rightarrow -\\infty\}\{l\\acute\{\\imath\}m\} \\frac\{";
+print $sig11,$coef1,"x^$exp1+2x^",$exp1-1,"+2}{5x^2+3\}=\$\$\n";
