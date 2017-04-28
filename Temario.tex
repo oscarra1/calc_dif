@@ -15,6 +15,9 @@
 \usepackage{graphicx}
 \usepackage{commath}
 
+\usepackage{esdiff}
+
+
 \usepackage{hyperref}
 \usepackage{mathrsfs}
 
@@ -1074,11 +1077,54 @@ Las discontinuidades se pueden clasificar en varios tipos:
 correspondiente no está conectada a la recta asintótica. 
 
 \chapter{Derivadas}
+Derivada es el cambio de una variable con respecto al cambio de otra, por ejemplo la velocidad, la inclinación, la forma
+de una cuerda suspendida en 2 puntos o el crecimiento de la población. La derivada mide la cantidad de cambio de una variable 
+con respecto a otra.
 \section{Interpretación geométrica de la derivada.}
+La derivada se visualiza o interpreta geométricamente como la inclinación de la tangente en un punto de una línea o superficie. La tangente es la recta
+que toca una línea en un solo punto (a menos que la línea sea una recta), y que es perpendicular a la ortogonal del punto. 
 \section{Incremento y razón de cambio.}
+ La derivada se mide como el cateto opuesto entre el cateto adyacente de un triángulo rectángulo limitado por 
+ una recta paralela al eje de las Xs, una recta paralela al eje de las Ys y la tangente definitora de la derivada. 
+
 \section{Definición de la derivada de una función.}
+\begin{definition}\label{der}
+Para un intervalo continuo, la derivada de una función es el:
+$$f'(x)=\underset{\mathrm{d}x\rightarrow 0}{lim}\frac{f(x+\mathrm{d}x)-f(x)}{\mathrm{d}x}$$
+\end{definition}
+
 \section{Diferenciales.}
+Son intervalos tan pequeños que se consideran puntos, aunque siempre siguen siendo intervalos, los más conocidos son:
+\begin{definition}\label{dx}
+ delta x
+$$\mathrm{d}x=\underset{(x_2-x_1)\rightarrow 0}{lim}(x_2-x_1)$$
+\end{definition}
+
+\begin{definition}\label{dy}
+ delta y
+$$\mathrm{d}y=\underset{(f(x+\mathrm{d}x)-f(x))\rightarrow 0}{lim}f(x+\mathrm{d})-f(x)$$
+\end{definition}
+
+
 \section{Cálculo de derivadas.}
+
+\begin{definition}\label{dercons}
+La derivada de una constante por una función es igual a la constante que multiplica a la derivada de la función:
+si $g(x)=kf(x)$ donde $k$ es una constante y $f(x)$ es continua en el intervalo dado:
+$$g'(x)=\frac{\mathrm{d}}{\mathrm{d}x}g=kf'(x)$$
+$$\diff{}{x}kf(x)=k\diff{}{x}f(x)=kf'(x)$$
+\end{definition}
+
+\begin{definition}\label{dersum}
+La derivada de una suma de funciones es igual a la suma de sus derivadas
+ $$\diff{}{x}(f(x)+g(y))=\diff{}{x}f(x)+\diff{}{x}g(x)$$
+\end{definition}
+
+\begin{definition}\label{derpol}
+La derivada de un polinomio es 
+ $$\diff{}{x}(x^n)=nx^{n-1}$$
+\end{definition}
+
 \section{Regla de la cadena.}
 \section{Derivada de funciones implícitas.}
 \section{Derivadas de orden superior.}
