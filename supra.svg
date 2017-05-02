@@ -37,12 +37,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1385"
-     inkscape:window-height="782"
+     inkscape:window-width="1563"
+     inkscape:window-height="789"
      id="namedview47"
      showgrid="false"
      inkscape:zoom="1.66"
-     inkscape:cx="-0.73601291"
+     inkscape:cx="50.822879"
      inkscape:cy="100"
      inkscape:window-x="375"
      inkscape:window-y="196"
@@ -144,13 +144,10 @@
   <line
      style="fill:none;stroke:#000000;stroke-width:0.89951205;marker-end:url(#arrow)"
      id="line45"
-     y2="123.0247"
-     x2="148.71017"
-     y1="125.79733"
-     x1="56.92942" />
-  <text
-     x="154"
-     y="125"
-     id="text4191"
-     style="font-size:medium;text-anchor:middle">C</text>
+     y2="96.90377"
+     x2="142.82823"
+     y1="126.03064"
+     x1="55.747707"
+     inkscape:transform-center-x="4.3704004"
+     inkscape:transform-center-y="4.7575667" />
 </svg>
