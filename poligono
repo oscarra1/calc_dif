@@ -1,0 +1,9 @@
+kturtle-script-v1.0
+@(reset)
+@(turnright) 90
+$radio=70
+$lados=9
+@(repeat) $lados {
+ @(forward) $radio
+@(turnleft) (360/$lados)
+}
