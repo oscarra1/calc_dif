@@ -33,58 +33,59 @@ print "\\title{Cálculo Diferencial}\n\n";
 
 print "\\author{Oscar Rendón Aldaraca}\n\n";
 $j=0;
-while($j<45){
-print "\\section{4to. parcial}\n";
-print"\\begin{enumerate}\n";
-$i=0;
-while ($i<5){
- $exp1=int(rand(4)+2);
- if($exp1==2){
-  $exp1="^2";
-  $exp2="";}
- else{
-  $exp2="^".($exp1-1);
-  $exp1="^".$exp1
- }
-$sig1=int(rand()+.5)?"-":"";
-$coef1=int(rand(4))+1;
-if($coef1==1){$coef1=""}
+while($j<45){#todos los exámenes
+ print "\\section{4to. parcial}\n";
+ print"\\begin{enumerate}\n";
+ $i=0;
+ while ($i<5){#primeros 5 problemas
+  $exp1=int(rand(4)+2);
+  if($exp1==2){
+   $exp1="^2";
+   $exp2="";}
+  else{
+   $exp2="^".($exp1-1);
+   $exp1="^".$exp1
+  }
+  $sig1=int(rand()+.5)?"-":"";
+  $coef1=int(rand(4))+1;
+  if($coef1==1){$coef1=""}
 
-$sig2=int(rand()+.5)?"-":"+";
-$coef2=int(rand(4))+1;
-if($coef2==1){$coef2=""}
+  $sig2=int(rand()+.5)?"-":"+";
+  $coef2=int(rand(4))+1;
+  if($coef2==1){$coef2=""}
 
-$sig3=int(rand()+.5)?"-":"+";
-$coef3=int(rand(4))+1;
+  $sig3=int(rand()+.5)?"-":"+";
+  $coef3=int(rand(4))+1;
 
-print " \\item \$\$\\underset\{x\\rightarrow +\\infty\}\{l\\acute\{\\imath\}m\} \\frac\{";
-print $sig1,$coef1,"x",$exp1,$sig2,$coef2,"x",$exp2,$sig3,$coef3,"}{";
+  print " \\item \$\$\\underset\{x\\rightarrow +\\infty\}\{l\\acute\{\\imath\}m\} \\frac\{";
+  print $sig1,$coef1,"x",$exp1,$sig2,$coef2,"x",$exp2,$sig3,$coef3,"}{";
 
-$exp1=int(rand(4)+2);
-if($exp1==2){
- $exp1="^2";
- $exp2="";}
-else{
- $exp2="^".($exp1-1);
- $exp1="^".$exp1}
-$sig1=int(rand()+.5)?"-":"";
-$coef1=int(rand(4))+1;
-if($coef1==1){$coef1=""}
+  $exp1=int(rand(4)+2);
+  if($exp1==2){
+   $exp1="^2";
+   $exp2="";}
+  else{
+   $exp2="^".($exp1-1);
+   $exp1="^".$exp1
+  }
+  $sig1=int(rand()+.5)?"-":"";
+  $coef1=int(rand(4))+1;
+  if($coef1==1){$coef1=""}
 
-$sig2=int(rand()+.5)?"-":"+";
-$coef2=int(rand(4))+1;
-if($coef2==1){$coef2=""}
+  $sig2=int(rand()+.5)?"-":"+";
+  $coef2=int(rand(4))+1;
+  if($coef2==1){$coef2=""}
 
-$sig3=int(rand()+.5)?"-":"+";
-$coef3=int(rand(4))+1;
-print $sig1,$coef1,"x",$exp1,$sig2,$coef2,"x",$exp2,$sig3,$coef3;
+  $sig3=int(rand()+.5)?"-":"+";
+  $coef3=int(rand(4))+1;
+  print $sig1,$coef1,"x",$exp1,$sig2,$coef2,"x",$exp2,$sig3,$coef3;
 
-print "}=\$\$\n";
- $i++
-}
+  print "}=\$\$\n";
+  $i++
+ }#final de primeros 5 problemas
 
-$i=0;
-while ($i<5){
+ $i=0;
+while ($i<5){#segundos 5 problemas
  $exp1=int(rand(4)+2);
  if($exp1==2){
   $exp1="^2";
@@ -138,30 +139,31 @@ print "\\sqrt[",$exp3,"]{",$sig1,$coef1,"x",$exp1,$sig2,$coef2,"x",$exp2,$sig3,$
 
 print "}}=\$\$\n";
  $i++
-}
+}# final de segundos 5 problemas
 
-$exp1=int(rand(4)+2);
-if($exp1==2){
- $exp1="^2";
- $exp2="";}
-else{
- $exp2="^".($exp1-1);
- $exp1="^".$exp1}
+ $exp1=int(rand(4)+2);
+ if($exp1==2){
+  $exp1="^2";
+  $exp2="";}
+ else{
+  $exp2="^".($exp1-1);
+  $exp1="^".$exp1
+ }
 
-$coef1=int(rand(4))+1;
-if($coef1==1){$coef1=""}
+ $coef1=int(rand(4))+1;
+ if($coef1==1){$coef1=""}
 
-$sig2=int(rand()+.5)?"-":"+";
-$coef2=int(rand(4))+1;
-if($coef2==1){$coef2=""}
+ $sig2=int(rand()+.5)?"-":"+";
+ $coef2=int(rand(4))+1;
+ if($coef2==1){$coef2=""}
 
-print "\\item \$\$(",$coef1,"x",$sig2,$coef2,"y)",$exp1,"\$\$\n";
+ print "\\item \$\$(",$coef1,"x",$sig2,$coef2,"y)",$exp1,"\$\$\n";
 
 
-print " \\end{enumerate}\n ";
-print " \\newpage\n";
-$j++;
-}
+ print " \\end{enumerate}\n ";
+ print " \\newpage\n";
+ $j++;
+}#final de todos los exámenes
 
 
 print "\\end{document}\n";
