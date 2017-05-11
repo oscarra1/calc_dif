@@ -1121,14 +1121,71 @@ La derivada de una suma de funciones es igual a la suma de sus derivadas
 \end{definition}
 
 \begin{definition}\label{derpol}
-La derivada de un polinomio es 
+
  $$\diff{}{x}(x^n)=nx^{n-1}$$
 \end{definition}
 
 
+\begin{definition}\label{dersen}
+ La derivada del seno es 
+ $$\diff{}{x}(sen(x))=cos(n)$$
+\end{definition}
+
+\begin{definition}\label{dercos}
+ La derivada del coseno es 
+ $$\diff{}{x}(cos(x))=-sen(n)$$
+\end{definition}
+
+\begin{definition}\label{derexp}
+ La derivada de la exponencial es 
+ $$\diff{}{x}(e^x)=e^x$$
+\end{definition}
+
+\begin{definition}\label{derprod}
+ La derivada un producto es 
+ $$\diff{}{x}(u\cdot v)=u\diff{v}{x}+v\diff{u}{x}$$
+\end{definition}
+
 \section{Regla de la cadena.}
+La derivada de una función de funciones es la derivada de la función externa con respecto a la función interna
+que multiplica a la derivada de la función interna con respecto a la variable independiente
+\begin{definition}\label{regcad}
+La derivada de un polinomio es 
+ $$\diff{}{x}(u(v))=\left(\diff{u}{v}\right)\left(\diff{v}{x}\right)$$
+\end{definition}
+\section{Orden de una derivada}
+A una derivada se le conoce como derivada de primer orden, a la derivada de la derivada se le conoce como derivada de 
+segundo orden, y así consecutivamente.
 \section{Derivada de funciones implícitas.}
+Una función implícita es cuando no se conoce cuál es la variable independiente y cuál es la variable dependiente.
+Se derivan ambos lados de la ecuación con respecto a la que se escoja como variable independiente.
+
+ $$sen(x)=y^2 +3$$
+\begin{align*}
+\diff{}{x}\left(sen(x)\right) & = \diff{}{x}\left(y^2 +3\right)\\
+cos(x)  &=2y\diff{y}{x}\\
+ &=2yy'\\
+ &=2y\dot y 
+\end{align*}
+*Para este curso, cuando aparezcan mezcladas en una misma ecuación una función y su derivada o dos derivadas de distinto orden
+se dejarán indicadas, la resolución de ese tipo de derivadas se dejará para la materia de ecuaciones diferenciales.
+
 \section{Derivadas de orden superior.}
+Como ya se había indicado con anterioridad a derivada se le conoce como derivada de primer orden, a la derivada
+de la derivada se le conoce como derivada de 
+segundo orden, y así consecutivamente. A las derivadas de segundo orden en adelante se les conoce como derivadas de orden 
+superior.
+
+
+\begin{align*}
+y&=f(x)\\
+y'&=\dot y=\diff{}{x}f(x)\\
+y''&=\ddot y=\diff{}{x}\diff{}{x}y\\
+y'''&=\dddot y=\diff{}{x}\diff{}{x}\diff{}{x}y
+\end{align*}
+
+
+
 \chapter{Aplicaciones de la derivada.}
 \section{Recta tangente y recta normal a una curva en un punto.}
 \section{Teorema de Rolle y teoremas del valor medio.}
