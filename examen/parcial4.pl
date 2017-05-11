@@ -34,7 +34,7 @@ print "\\title{Cálculo Diferencial}\n\n";
 print "\\author{Oscar Rendón Aldaraca}\n\n";
 $j=0;
 while($j<45){
-print "\\section{Ejercicios}\n";
+print "\\section{4to. parcial}\n";
 print"\\begin{enumerate}\n";
 $i=0;
 while ($i<5){
