@@ -904,7 +904,7 @@ En matemáticas, cuando el número de lados inscritos y circunscritos de un pol�
 aproxima a un valor fijo llamado límite y este límite es el área del círculo. Por tanto, podemos decir
 que si $n$ representa el número de lados de un polígono y $A_p$ el área del polígono inscrito entonces el área
 del círculo es igual al:
-$$\underset{n\rightarrow \infty}{lim}A_p=\acute{A}rea\;\;\;del\;\;\;c\acute{i}rculo$$
+$$\underset{n\rightarrow \infty}{lim}A_p=\acute{A}rea\;\;\;del\;\;\;c\acute{\imath}rculo$$
 Ver figura \ref{cir}
 
 \begin{figure}
@@ -1187,18 +1187,133 @@ y'''&=\dddot y=\diff{}{x}\diff{}{x}\diff{}{x}y
 
 
 \chapter{Aplicaciones de la derivada.}
+
+Las derivadas se utilizan para cualquier proceso donde haya un cambio. Esto implica la mayoría de los procesos y el cambio es un cambio
+en la cantidad numérica que se esté midiendo.
+Como ejemplos de cambio puede ser en las empresas el cambio de precios, costos, ganancias, producción, inventario, ventas, tiempos, 
+y hablando más en general de procesos de producción puede ser temperaturas, asistencias, ambiente laboral, presión, iluminación, peso, masa,
+pureza. En fin, cualquier objeto de estudio que pueda ser medido de forma numérica, puede tener un cambio y por lo tanto una derivada de primer
+orden o superior.
+
+La pendiente o derivada de una curva es la cantidad de cambio que tiene la recta, curva o función en cada punto de la misma, lo que nos indicará 
+a mayor valor de la derivada, mayor pendiente o cantidad de cambio de la función que representa. Por lo que nos servirá para encontrar el máximo 
+cambio de una variable. La segunda derivada nos indicará en su valor 0 (su raíz) los puntos de máxima variación o puntos de inflexión donde el 
+cambio empieza a ser menor, por lo que para tener el máximo cambio se necesita estar en estos puntos de inflexión (segunda derivada en cero)
+\begin{equation}
+ \left(y'>0 \bigcap y''=0\right) \Rightarrow M\acute{a}xAum(\mathscr{R})= y 
+\end{equation}
+\begin{equation}
+ \left(y'<0 \bigcap y''=0\right) \Rightarrow M\acute{a}xDis(\mathscr{R})= y 
+\end{equation}
+
+Cuando la pendiente o la derivada vale 0, la misma nos está indicando que el valor es mínimo o máximo en ese punto, por lo que se utiliza para 
+maximizar una variable, por ejemplo ventas, o para minimizar una variable, por ejemplo costos.
+\begin{equation}\label{max}
+ \left(\left(\diff{}{x}(y-\Delta)>0\right) \bigcap y'=0\right) \Rightarrow M\acute{a}x(\mathscr{R})= y 
+\end{equation}
+\begin{equation}\label{min}
+ \left(\left(\diff{}{x}(y-\Delta)<0\right) \bigcap y'=0\right) \Rightarrow M\acute{\imath}n(\mathscr{R})= y 
+\end{equation}
+
+Para el modelado matemático de los procesos en el tiempo, se usan las derivadas de órdenes superiores, ya que los valores en el tiempo
+dependen de los valores o resultados anteriores.
+\begin{equation}\label{modelo}
+ f_n=f_{n-1}+\Delta f_{n-1}'+\Delta f_{n-1}''+\Delta f_{n-1}'''+...
+\end{equation}
+
 \section{Recta tangente y recta normal a una curva en un punto.}
-\section{Teorema de Rolle y teoremas del valor medio.}
+La tangente a una curva o recta es la derivada en ese punto
+\begin{equation}
+ m=y'
+\end{equation}
+La perpendicular, ortogonal o recta normal en un punto está dada por la inversa multiplicativa y aditiva:
+\begin{equation}
+ \bot m=-\frac{1}{m}=-\frac{1}{y'} 
+\end{equation}
+
+\section{Teorema de Rolle y teorema del valor medio.}
+El teorema de Rolle nos dice que para un intervalo cerrado $[a,b]$ derivable (continuo)
+en el intervalo abierto $(a,b)$ si $f(a)=f(b)$ entonces existe al menos un
+punto en $f(a,b)$ cuya derivada es igual a $0$
+\begin{equation}
+  f(a)=f(b) \Rightarrow \exists c \in (a,b)|f'(c)=0
+\end{equation}
+El teorema de valor medio (de Lagrange) es una generalización del teorema de Rolle y nos indica que entre 2 puntos de un
+intervalo continuo la pendiente de al menos un punto en el intervalo será igual a la de la recta que une a los 2 puntos.
+\begin{equation}
+ \exists c \in (a,b)|f'(c)=\frac{f(b)-f(a)}{b-a}
+\end{equation}
+
+
 \section{Función creciente y decreciente.}
+Una función es creciente cuando su derivada es positiva, inversamente una función es decreciente si su derivada es negativa
+
+\begin{equation}
+ y'>0 \Rightarrow y+\Delta y>y
+\end{equation}
+\begin{equation}
+ y'<0 \Rightarrow y+\Delta y<y
+\end{equation}
+
 \section{Máximos y mínimos de una función.}
+Cuando una función está en un máximo o un mínimo de una curva su derivada es cero -$0$-
+\begin{equation}
+ y'=0 \Rightarrow \left( M\acute{\imath}n(y)= y \vee M\acute{a}x(y)= y \right)
+\end{equation}
 \section{Criterio de la primera derivada para máximos y mínimos.}
+Cuando la primera derivada es cero, la función se encuentra en un máximo \ref{max} o en un mínimo \ref{min}
+\begin{equation}
+  f'(x)=0 \Rightarrow f(x)=(M\acute{a}x(\mathscr{R}) \vee M\acute{\imath}n(\mathscr{R}))
+\end{equation}
+
 \section{Concavidades y puntos de inflexión.}
+Concavidad viene de la palabra cóncavo y convexo viene a ser su contrario. Cuando un objeto o una curva tiene la forma de
+un plato, taza o cuenco se dice que es cóncavo o cóncavo hacia arriba porque por su forma puede contener algún líquido, si por el contrario tiene forma
+de paraguas entonces rechaza el agua por lo que se le llama que es convexo o de concavidad invertida o cóncavo hacia abajo en el caso de una
+curva, es decir, la concavidad está hacia abajo.
+
+Entonces una curva es cóncava o cóncava hacia arriba si su primera derivada es cero y es un mínimo en su parte central.
+Estará rodeada de una inflexión positiva a su izquierda y una inflexión negativa a su derecha.
+\begin{equation}
+ \left(y'=0\right)\bigcap\left( \diff{}{x}(y'-\Delta)<0\right)\bigcap\left(\diff{}{x}(y'+\Delta)>0\right)
+\end{equation}
+
 \section{Criterio de la segunda derivada para máximos y mínimos.}
+Cuando la primera derivada es cero y la segunda derivada es positiva entonces la curva es cóncava y por lo tanto $x$ está en un mínimo. Inversamente si 
+la primera derivada es cero y la segunda es negativa entonces se encuentra uno en una curva cóncava hacia abajo, por lo que el punto estará en un máximo.
+\begin{equation}
+ f'(x)=0 \bigcap f''(x)<0 \Rightarrow f(x)=(M\acute{a}x(\mathscr{R})
+\end{equation}
+\begin{equation}
+ f'(x)=0 \bigcap f''(x)>0 \Rightarrow f(x)=(M\acute{\imath}n(\mathscr{R})
+\end{equation}
+
+
 \section{Análisis de la variación de una función. Graficación.}
+Una función f(x) es creciente, o aumenta su valor a lo largo del eje X si
+su derivada es positiva, en caso de que su derivada sea negativa es
+decreciente, y la función no crece ni decrece cuando su derivada es
+igual a cero figura \ref{analisis}.\cite{analis}
+\begin{figure}
+\centering\label{analisis}
+ \includegraphics[scale=.9]{analis}\caption{Análisis de la variación de una función de acuerdo a la primera derivada}
+\end{figure}
+
 \section{Problemas de optimización y de tasas relacionadas.}
+Los problemas de optimización son los problemas donde se quiere que una cierta variable cumpla las condiciones óptimas de acuerdo a un cierto criterio,
+por ejemplo la condición óptima de producción puede ser cuando se obtienen las máximas ganancias, o cuando los tiempos de producción se minimizan. En
+ambos casos la primera derivada es cero. La segunda derivada es positiva para el caso óptimo de minimización y negativa para el caso óptimo de maximización.
 \section{Cálculo de aproximaciones usando diferenciales.}
+Cuando se tienen cálculos complejos de la industria o empresariales, a veces el modelado no es tan fácil de realizar por lo que se recurre a cálculos
+aproximados utilizando derivadas de orden superior ver ecuación \ref{modelo}. 
 \section{La regla de L’Hôpital.}
 
+Cuando los valores de una función o su derivada son indeterminados, ya sea porque el resultado de las funciones o derivadas son cero entre cero o infinito 
+entre infinito, las derivadas se pueden determinar a partir de la relación entre funciones, análogamente, las funciones se pueden deducir de sus derivadas.
+
+\begin{equation}
+ \frac{f(x)}{g(x)}=\frac{f'(x)}{g'(x)}=L
+\end{equation}
 
 
 %\bibliographystyle{}
