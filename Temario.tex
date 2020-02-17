@@ -1,4 +1,4 @@
-\documentclass[oneside,spanish,letter]{extbook}
+\documentclass[oneside,spanish,letterpaper]{extbook}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \setcounter{secnumdepth}{3}
@@ -242,7 +242,7 @@ Para cualquier número, si:
 
   Entonces $| x | = x$  y  si
 
-$x ‹ 0$ entonces $| x | = -x$
+$x < 0$ entonces $| x | = -x$
 
 Las propiedades fundamentales del valor absoluto son:
 
@@ -276,7 +276,7 @@ de la resta de dos números es 0, entonces los dos números son iguales en su va
 
 $$| x - y | x = y$$
 
-Desigualdad Triangular: Puede ser expresada en la forma: $| x – y | | x – z | + | z - x |$.
+Desigualdad Triangular: Puede ser expresada en la forma: $| x - y | | x - z | + | z - x |$.
 
 Preservación de la División: Es el equivalente de la propiedad multiplicativa y establece que
 el módulo de la división de dos números es siempre igual a la división del módulo de los dos
@@ -1041,15 +1041,27 @@ $$f(x)=k$$
 La funciones asintóticas pueden ser:
 $$f(x)=2$$
 $$g(x)=\frac{2x^2+3}{x^2-1}$$
-$$\overset{x\rightarrow \infty}{lim}g(x)=2$$
+$$\underset{x\rightarrow \infty}{lim}g(x)=2$$
 Es este caso $f(x)$ es la recta que es la asíntota y $g(x)$ es la función que se va acercando a 2.
 \subsection{Asíntotas Verticales}
+Una línea vertical está definida por la fórmula:
+$$
+x=k
+$$
+entonces el valor de $y$ en una gráfica del plano $xy$ será una recta vertical ya que cualquier valor de 
+$y$ no importará ya que $x$ seguirá siendo $k$. Esta recta es la asíntota de la función 
+$y=\frac{1}{x-k}$ (figura \ref{asinv}) 
+\begin{figure}
+\centering
+ \includegraphics[scale=.6]{asinver}
+ \caption{Función asintótica a la vertical en 5}\label{asinv}
+\end{figure}
 \section{Continuidad en un punto y en un intervalo.}
 Una función continua es aquella que responde a las variaciones de
 cada valor en la entrada de la función por
 lo que muestra variación no discontinua o de saltos bruscos en la salida de la función.
 
-Una definición formal de una función continua es “Una función $f: X\rightarrow Y$ se dice que es continua,
+Una definición formal de una función continua es “Una función $f:X\rightarrow Y$ se dice que es continua,
 si la imagen inversa de todos los conjuntos abiertos en el rango de la función son abiertos en el dominio de la función”.
 
 Para que una función continua sea continua en un punto $P$ específico, debe cumplir tres condiciones:
@@ -1321,7 +1333,7 @@ entre infinito, las derivadas se pueden determinar a partir de la relación entr
 %\addbibresource{EDA-biblio}
 %\bibliographystyle{plain}
 
-\printbibliography
+\printbibliography[heading=bibintoc]
 
 
 %\bibliography{
