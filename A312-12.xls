@@ -1,0 +1,297 @@
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+ 	<style type="text/css">
+	   	th{     
+			font-size: 13px;     
+			font-weight: bold;     
+			padding: 8px;     
+			background: #b9c9fe;
+	    		border-top: 4px solid #aabcfe;    
+			border-bottom: 1px solid #fff; 
+			color: #039; 
+			font-style: bold;
+		}
+
+			td{     
+			font-size: 13px;     
+			font-weight: normal;     
+			padding: 8px;     
+			background: #f5f7ae;
+	    		/*border-top: 4px solid #aabcfe;    */
+			border-bottom: 1px solid #fff; 
+			/*color: #039;  */
+		}
+	  </style>
+
+
+
+<script language="javascript">
+$(document).ready(function() {
+	$(".botonExcel").click(function(event) {
+		$("#datos_a_enviar").val( $("<div>").append( $("#Exportar_a_Excel").eq(0).clone()).html());
+		$("#FormularioExportacion").submit();
+});
+});
+</script>
+
+
+<table id="Exportar_a_Excel"> 
+	 <th> <td>  Materia y grupo  </td> <td>A312--12</td>  </th>	
+	 <tr> <td>No de Control</td>    <td> Nombre Completo </td>  <td> Carrera </td> <td> email </td> </tr> <tr>
+		      <td>25380049</td>
+		      <td>ALVAREZ SANCHEZ SERGIO DANIEL</td>
+		      <td>IC</td>
+
+		     <td> L25380049@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380053</td>
+		      <td>AVENDAÑO BAUTISTA ANGEL EMMANUEL</td>
+		      <td>IC</td>
+
+		     <td> L25380053@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380056</td>
+		      <td>BANDA GUEVARA BRISSIA JAQUELINE</td>
+		      <td>IC</td>
+
+		     <td> L25380056@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380057</td>
+		      <td>BARRON VELAZQUEZ NANCY</td>
+		      <td>IC</td>
+
+		     <td> L25380057@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380063</td>
+		      <td>CAMPOS RUIZ LUIS ANGEL</td>
+		      <td>IC</td>
+
+		     <td> L25380063@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380070</td>
+		      <td>CORDOVA PEREZ RANDY</td>
+		      <td>IC</td>
+
+		     <td> L25380070@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380073</td>
+		      <td>CRUZ MENDOZA JESUS ALEXANDER</td>
+		      <td>IC</td>
+
+		     <td> L25380073@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380074</td>
+		      <td>DE LA FUENTE RODRIGUEZ JUAN CARLOS</td>
+		      <td>IC</td>
+
+		     <td> L25380074@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380077</td>
+		      <td>FUENTES MALIBRÁN JORGE</td>
+		      <td>IC</td>
+
+		     <td> L25380077@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380081</td>
+		      <td>GARCIA LOPEZ GERARDO</td>
+		      <td>IC</td>
+
+		     <td> L25380081@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380086</td>
+		      <td>GOMEZ CEDILLO JAVIER ARMANDO</td>
+		      <td>IC</td>
+
+		     <td> L25380086@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380092</td>
+		      <td>HERNANDEZ MARTINEZ ABISAY</td>
+		      <td>IC</td>
+
+		     <td> L25380092@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380096</td>
+		      <td>IBARRA CANO JUAN SEBASTIAN</td>
+		      <td>IC</td>
+
+		     <td> L25380096@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380682</td>
+		      <td>LEON LUNA EDGAR GAEL</td>
+		      <td>IC</td>
+
+		     <td> L25380682@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380100</td>
+		      <td>LOPEZ MENDOZA GUILLERMO ALBERTO</td>
+		      <td>IC</td>
+
+		     <td> L25380100@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380101</td>
+		      <td>LOPEZ RAMIREZ JOSE ADONAY</td>
+		      <td>IC</td>
+
+		     <td> L25380101@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380104</td>
+		      <td>LUMBRERAS FONSECA ALDO GABRIEL</td>
+		      <td>IC</td>
+
+		     <td> L25380104@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380107</td>
+		      <td>MALDONADO BAUTISTA KLEBER MISAEL</td>
+		      <td>IC</td>
+
+		     <td> L25380107@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380111</td>
+		      <td>MARTINEZ DIMAS MILDRED MICHELLE</td>
+		      <td>IC</td>
+
+		     <td> L25380111@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380115</td>
+		      <td>MARTÍNEZ PALMILLAS LUIS DANIEL</td>
+		      <td>IC</td>
+
+		     <td> L25380115@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380119</td>
+		      <td>MEDINA ORTA ANA PAOLA</td>
+		      <td>IC</td>
+
+		     <td> L25380119@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380121</td>
+		      <td>MEDRANO VELAZQUEZ VICTOR MANUEL</td>
+		      <td>IC</td>
+
+		     <td> L25380121@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380123</td>
+		      <td>MONTALVO RIOS DAVID ALEXANDER</td>
+		      <td>IC</td>
+
+		     <td> L25380123@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380127</td>
+		      <td>OLIVO DE LEÓN ERICK DANIEL</td>
+		      <td>IC</td>
+
+		     <td> L25380127@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380131</td>
+		      <td>PEQUEÑO TOVAR ARTURO EMMANUEL</td>
+		      <td>IC</td>
+
+		     <td> L25380131@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380135</td>
+		      <td>PITONES GARCIA UBALDO GUADALUPE</td>
+		      <td>IC</td>
+
+		     <td> L25380135@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380139</td>
+		      <td>QUIROZ BECERRA DULCE SURISADAI</td>
+		      <td>IC</td>
+
+		     <td> L25380139@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380140</td>
+		      <td>RAMIREZ CHAPA ISAAC ALEJANDRO</td>
+		      <td>IC</td>
+
+		     <td> L25380140@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380147</td>
+		      <td>RIVAS MARTINEZ ANGELA JOELY</td>
+		      <td>IC</td>
+
+		     <td> L25380147@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>24380135</td>
+		      <td>RIVERA MEDINA CESAR ANTONIO</td>
+		      <td>IC</td>
+
+		     <td> L24380135@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380151</td>
+		      <td>RODRIGUEZ GARCIA ALYN MICHELLE</td>
+		      <td>IC</td>
+
+		     <td> L25380151@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380155</td>
+		      <td>ROSALES MARQUEZ CARLOS ARAEL</td>
+		      <td>IC</td>
+
+		     <td> L25380155@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380694</td>
+		      <td>SILGUERO ALVAREZ JAIME ALEJANDRO</td>
+		      <td>IC</td>
+
+		     <td> L25380694@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380163</td>
+		      <td>SOLIS GARCIA JUAN MANUEL</td>
+		      <td>IC</td>
+
+		     <td> L25380163@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380167</td>
+		      <td>TORRES REYNA ANGEL MARTIN</td>
+		      <td>IC</td>
+
+		     <td> L25380167@cdvictoria.tecnm.mx</td>
+
+	   	</tr><tr>
+		      <td>25380171</td>
+		      <td>VAZQUEZ VAZQUEZ ORLANDO EMANUEL</td>
+		      <td>IC</td>
+
+		     <td> L25380171@cdvictoria.tecnm.mx</td>
+
+	   	</tr></table>	
