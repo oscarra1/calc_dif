@@ -22,14 +22,45 @@
 \usepackage{hyperref}
 \usepackage{mathrsfs}
 
+\usepackage{amsthm}
+\usepackage{csquotes}
+\usepackage{thmtools}
+
+\newtheorem{theorem}{Theorem}
 
 \newtheorem{example}{Ejemplo}[section]% Example
 \newtheorem{definition}{Definición}[section]% Example
+
+
+\addto\shorthandsspanish{\spanishdeactivate{~<>.}}
+\addto\captionsspanish{\renewcommand{\chaptername}{Unidad}}
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}
+
+
+%\declaretheorem[numberwithin=section]{ejemplo}
+%\declaretheorem[numberwithin=section]{teorema}
+%\declaretheorem[numberwithin=section,name=Definición]{definition}
+%\declaretheorem[numberwithin=ejemplo,name=Solución]{solucion}
+%\declaretheorem[numberwithin=section,name=Práctica]{practica}
+%\declaretheorem[numberwithin=section]{tarea}
+
+
+\theoremstyle{mythmstyle}
+\newtheorem{ejemplo}{Ejemplo}[section]
+\newtheorem{teorema}{Teorema}[section]
+\newtheorem{axioma}{Axioma}[section]
+\newtheorem{definicion}{Definición}[section]
+\newtheorem{solucion}{Solución}[ejemplo]
+\newtheorem{practica}{Práctica}[section]
+\newtheorem{tarea}{Tarea}[section]
+
+
 
 \usepackage[backend=biber]{biblatex}
 \bibliography{EDA-biblio}
 
 \begin{document}
+
 
 \title{Cálculo Diferencial}
 
@@ -55,6 +86,57 @@ Axioma viene del griego axioma que significa ``Lo que parece justo'' o sea lo ev
 griego "axioein``
  valorar que a la vez viene del griego ``axios'' valuable o digno. 
  Por lo que viene a significar todo aquello que no requiere prueba. 
+
+
+\subsection{Axiomas sobre la adición o suma}
+\begin{definicion}[Axioma de la cerradura]
+Para todo $x,y\in \mathbb{R}$, existe un único elemento, también en $\mathbb{R}$, denotado por $\mathit{x}+\mathit{y}\,\!$ que llamamos la suma de $\mathit{x}\,\!$ e $\mathit{y}\,\!$.
+\end{definicion}
+\begin{definicion}[Axioma de la conmutatividad]
+$\mathit{x}+\mathit{y}=\mathit{y}+\mathit{x} \,\!$ para todo $x,y \in \mathbb{R}$.
+\end{definicion}
+
+\begin{definicion}[Axioma de la asociatividad]
+$(\mathit{x}+\mathit{y})+\mathit{z} = \mathit{x}+(\mathit{y}+\mathit{z})\,\!$ para todo $x,y,z\in \mathbb{R}$.
+\end{definicion}
+
+\begin{definicion}[Axioma del elemento neutro]Existe un elemento de $\mathbb{R}$, denominado ``cero'' y denotado por $\mathrm{0}\,\!$ tal que $\mathit{x}+0=\mathit{x}\,\!$ para todo $x\in \mathbb{R}$.
+\end{definicion}
+
+\begin{definicion}[Axioma del elemento inverso]
+Para cada $x\in \mathbb{R}$ existe un $y\in \mathbb{R}$ tal que $\mathit{x}+\mathit{y}=0\,\!$.
+
+\end{definicion}
+
+\subsection {Axiomas sobre la multiplicación}
+\begin{definicion}[Axioma de la cerradura]
+Para todo $x,y\in \mathbb{R}$, existe un único elemento, también en $\mathbb{R}$, denotado por $xy\,\!$ que llamaremos el producto de $x\,\!$ e $y\,\!$.
+\end{definicion}
+
+\begin{definicion}[Axioma de la conmutatividad]
+$xy = yx \,\!$ para todo $x,y\in \mathbb{R}$.
+\end{definicion}
+
+\begin{definicion}[Axioma de la asociatividad]
+$(xy)z = x(yz) \,\!$ para todo $x,y,z\in \mathbb{R}$.
+\end{definicion}
+
+\begin{definicion}[Axioma  del elemento neutro]
+Existe un elemento de $\mathbb{R}$, que denominamos "uno" y denotaremos por $1 \,\!$ tal que $1x=x1=x \,\!$ y además $1\ne0 \,\!$.
+\end{definicion}
+
+\begin{definicion}[Axioma del elemento inverso]
+Para cada $x\in \mathbb{R}$ tal que no sea cero, existe un $y\in \mathbb{R}$ tal que $xy=1\,\!$.
+\end{definicion}
+
+\subsection{Axioma sobre la distribución}
+Este axioma conecta la suma  con la multiplicación:
+\begin{definicion}[Axioma de la distributividad]
+Para todo <math>x,y,z\in \mathbb{R}\,\,x(y+z)=xy+xz</math>.
+\end{definicion}
+
+%\cite{}
+
 \section{Intervalos y su representación gráfica.}
 Un subconjunto de la recta se llama "Intervalo".
 Los intervalos de números correspondientes a segmentos de recta son
@@ -182,7 +264,7 @@ La notación de intervalo correspondiente sería: $(-\infty , -1 )\bigcup (4,\in
 Este intervalo puede ser interpretado como la representación de todo un conjunto de números,
 como la unión de 2 conjuntos diferentes.
 
-El primer conjunto comenzará desde el valor infinito negativo hasta el −1 en la recta numérica.
+El primer conjunto comenzará desde el valor infinito negativo hasta el -1 en la recta numérica.
 
 El segundo conjunto comenzará desde el 4 hasta el valor infinito positivo.
 
@@ -224,10 +306,10 @@ como el módulo del número.
 
 El valor absoluto de un número $x$ se escribe como $| x |$, y se lee como “módulo de $x$”.
 
-Por ejemplo, la posición de $2$ y −2 en la recta numérica indica que −2 <2, pero que ambos están
+Por ejemplo, la posición de $2$ y -2 en la recta numérica indica que -2 <2, pero que ambos están
 a la misma distancia de 0.
 
-Por lo tanto, se dice que −2 y 2 tienen el mismo valor absoluto.
+Por lo tanto, se dice que -2 y 2 tienen el mismo valor absoluto.
 
 En el caso de los números reales las generalidades del valor absoluto pueden encontrarse en una
 amplia variedad de ajustes aritméticos.
@@ -418,7 +500,7 @@ $5^2 > 3(5) + 4;\;\;\;\;25 > 19$ VERDADERO
 
 La solución de la desigualdad es entonces: $(-\infty , -1) \cup (4 , \infty)$
 
-4) $-4x^2 + x + 5 ≥ 0$
+4) $-4x^2 + x + 5 \geq 0$
 
 Cambiamos el signo de desigualdad por el signo de igual y revolvemos. En este caso utilizaremos la fórmula general
 
@@ -433,7 +515,7 @@ $$-4(-3)2 + (-3) + 5 \leq 0$$
 $-34 \geq 0$ FALSO
 
 Del intervalo $[-1 , 5/4]$ evaluaremos el $1$
-$$-4(1)2 + 1 + 5 ≥ 0$$
+$$-4(1)2 + 1 + 5 \geq 0$$
 
 
 $2 \geq 0$ VERDADERO
@@ -442,7 +524,7 @@ Del intervalo $[5/4 , \infty )$ evaluaremos el 2
 $$-4(2)2 + 2 + 5 \geq 0$$
 
 
-$-9 ≥ 0$ FALSO
+$-9 \geq 0$ FALSO
 
 La solución de la desigualdad es entonces: $[-1 , 5/4]$
 \cite{cd3}
@@ -513,11 +595,11 @@ Donde, f es una función de N a R. R forma el valor de la función y N es el arg
 
 Para arrojar más luz sobre el tema veamos un ejemplo,
 
-$f(x) = 2x + 3$ se puede resolver para dos valores 2 y −3 como
+$f(x) = 2x + 3$ se puede resolver para dos valores 2 y -3 como
 
 $$f(2) = 2 x 2 + 3 =7$$
 
-$$f(−3) = 2 x (−3) + 3 = −3$$
+$$f(-3) = 2 x (-3) + 3 = -3$$
 
 $f(x)=y$
 
@@ -1334,9 +1416,19 @@ entre infinito, las derivadas se pueden determinar a partir de la relación entr
 %\bibliographystyle{plain}
 
 \printbibliography[heading=bibintoc]
-
-
-%\bibliography{
-
+%\printbibliography
 \end{document}
+%
+%
+%
+%
+%[heading=bibintoc]
+%
+%
+%
+%\bibliography{
+%
+%
+%\end{document}
+
 
