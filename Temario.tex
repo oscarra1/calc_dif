@@ -690,7 +690,11 @@ Por lo que se puede concluir que hay una salida diferente para cada entrada de l
 Matemáticamente:
 
 La función $f:\mathscr{D}\longrightarrow \mathscr{R}$ es inyectiva si para
-$\forall x,y \in \mathscr{D}, x \neq y \Rightarrow f(x) \neq f(y) $
+\begin{equation}
+ \forall x,y \in \mathscr{D}, x \neq y \Rightarrow f(x) \neq f(y)
+ \label{inyec1}
+\end{equation}
+
 
 La notación utilizada para representar una función inyectiva es la flecha con cola de pescado,
 es decir, $f: A\rightarrowtail B$, donde $f$ es una función de A a B. Tal función asegura una imagen
@@ -698,9 +702,16 @@ es decir, $f: A\rightarrowtail B$, donde $f$ es una función de A a B. Tal funci
 elemento en el dominio de la función. Sin embargo, en algunos casos, un elemento en
 particular en el rango de la función puede tener múltiples pre- imágenes.
 
-En términos matemáticos, una función inyectiva es una función $f: A\rightarrow B$, donde ningún elemento
-de B es la imagen de dos o más elementos diferentes de A bajo f. En terminología gráfica, si la curva
-que representa la función es cortada por cualquier línea horizontal una sola vez, entonces tal
+En términos matemáticos, una función inyectiva es también una función $f: A\rightarrow B$, donde ningún elemento
+de B es la imagen de dos o más elementos diferentes de A bajo f.
+\begin{equation}
+ f:A\rightarrowtail B\Rightarrow f(a_u)= b_v\neq f(a_w)=b_x\in B;
+  \label{inyec1}
+\end{equation}
+
+
+En terminología gráfica, si la curva
+que representa la función en un plano cartesiano $X\times Y$ , eje de las $x_s$ horizontal y función en las $y_s$ del eje $Y$ vertical, es cortada por cualquier línea horizontal una sola vez, entonces tal
 función es llamada función inyectiva.
 \subsection{Función suprayectiva}
 Una función sobreyectiva, suprayectiva o exhaustiva  también conocida con el nombre de sobre función,
@@ -715,21 +726,35 @@ el dominio para cada elemento en el codominio. Ver figura \ref{supra}.
 
 En términos matemáticos, una función sobreyectiva 
 es una función $f:\mathscr{D}\longrightarrow \mathscr{R}\subseteq\mathscr{C}$ donde 
-el rango de la función es igual al codominio de la función $\mathscr{R}=\mathscr{C}$.
+el rango de la función es igual al codominio de la función
+\begin{equation}
+ \mathscr{R}=\mathscr{C}.
+ \label{supray}
+\end{equation}
+
+
 Una consecuencia de lo anterior es que la cardinalidad del dominio es mayor o igual a la cardinalidad del rango y
 del codominio.
-$$card(\mathscr{D})\leq card(\mathscr{R})=card(\mathscr{C})$$
+$$|\mathscr{D}|=card(\mathscr{D})\geq |\mathscr{R}|\wedge|\mathscr{D}|\geq|\mathscr{C}|$$
 
-Por lo tanto, con el fin de demostrar que una función es una función sobreyectiva,
-debemos probar que $\mathscr{R}$ es un subconjunto propio de $\mathscr{C}$.
-Con este fin uno puede tomar arbitrariamente
-cualquier elemento del codominio y demostrar que este existe como la imagen de algún elemento
-en el dominio de la función.\cite{cd9}
-$$\forall x,\exists f(x)\in \mathscr{C}$$
+Por lo que cualquier elemento del codominio de la función existe en el rango y hay demostrar que existe como la imagen de algún elemento
+en el dominio de la función.
+\begin{equation}
+ \forall x\in \mathscr D,\exists f(x)\in \mathscr{R}\wedge f(x)\in\mathscr C
+ \label{supray2}
+\end{equation}
+
+
 \subsection{Función biyectiva.}
-Una función es biyectiva cuando es inyectiva y sobreyectiva al mismo tiempo, lo que significa que todos los 
+Una función es biyectiva cuando es inyectiva y sobreyectiva (ecs. \ref{inyec1}, \ref{supray2}) al mismo tiempo, lo que significa que todos los
 elementos del codominio están representados en el dominio pero le corresponde solo uno en el dominio para cada
-elemento del codominio. Ver figura \ref{biyec}
+elemento del codominio.
+$$
+  |\mathscr{D}|=|\mathscr{C}|\wedge\mathscr{R}=\mathscr{C}.
+$$
+
+
+Ver figura \ref{biyec}
 \begin{figure}
 \centering
  \includegraphics[scale=.9]{g41}\caption{Función biyectiva}\label{biyec}

@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage{amsthm,amsmath}
+
+% Definición de entornos
+\newtheorem{axiom}{Axioma}
+\newtheorem{theorem}{Teorema}
+\renewcommand{\proofname}{Prueba}
+
+\begin{document}
+
+\section*{Ejemplo de Axiomas y Teoremas Numerados}
+
+\begin{axiom}\label{ax:1}
+Si $a=b$, entonces $a+c=b+c$.
+\end{axiom}
+
+\begin{axiom}\label{ax:2}
+Si $a=b$ y $b=c$, entonces $a=c$.
+\end{axiom}
+
+\begin{axiom}\label{ax:3}
+Para todo número real $a$, existe $-a$ tal que $a + (-a) = 0$.
+\end{axiom}
+
+\begin{axiom}\label{ax:4}
+Existe un número $0$ tal que $a+0=a$ para todo $a$.
+\end{axiom}
+
+\begin{theorem}\label{th:1}
+Si $a=b$, entonces $a+0=b+0$.
+\end{theorem}
+
+\begin{proof}
+Por el Axioma~\ref{ax:4}, $a+0=a$ y $b+0=b$.
+Aplicando el Axioma~\ref{ax:1}, se obtiene $a+0=b+0$.
+\end{proof}
+
+\begin{theorem}\label{th:2}
+Si $a=b$, entonces $a+(-a)=b+(-b)=0$.
+\end{theorem}
+
+\begin{proof}
+Usando los Axiomas~\ref{ax:1}, \ref{ax:3} y \ref{ax:4}, tenemos
+\[
+a+(-a)=0=b+(-b).
+\]
+\end{proof}
+
+\end{document}
+
