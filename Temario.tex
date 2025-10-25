@@ -1012,7 +1012,7 @@ En matemáticas, cuando el número de lados inscritos y circunscritos de un pol�
 aproxima a un valor fijo llamado límite y este límite es el área del círculo. Por tanto, podemos decir
 que si $n$ representa el número de lados de un polígono y $A_p$ el área del polígono inscrito entonces el área
 del círculo es igual al:
-$$\underset{n\rightarrow \infty}{lim}A_p=\acute{A}rea\;\;\;del\;\;\;c\acute{\imath}rculo$$
+$$\underset{n\rightarrow \infty}{\lim}A_p=\acute{A}rea\;\;\;del\;\;\;c\acute{\imath}rculo$$
 Ver figura \ref{cir}
 
 \begin{figure}
@@ -1024,7 +1024,7 @@ Ver figura \ref{cir}
 Aproximación hacia un punto concreto de una sucesión o una función, a medida que los parámetros de esa
 sucesión o función se acercan a un determinado valor. \cite{cd15}
 $$f(x):=\overset{x}{\underset{i=1}{\sum}}\frac{9}{10^i}$$
-$$\underset{n\rightarrow \infty}{lim}f(n)=1$$
+$$\underset{n\rightarrow \infty}{\lim}f(n)=1$$
 
 \section{Definición de límite de una función.}
 El límite de una función es el valor $L$ que parece tomar $f(x)$ para cierto valor de la $x$ llamado $x_0$. 
@@ -1032,13 +1032,13 @@ El límite de una función es el valor $L$ que parece tomar $f(x)$ para cierto v
 Cuando una función $f(x)$ toma valores muy próximos a $L$ cada vez que tomamos una $x$ suficientemente cerca
 de $x_0$ se dice que el límite de la función $f(x)$
 es $L$ cuando $x$ tiende a $x_0$,\cite{cd16} y se escribe:
-$$\underset{x\rightarrow x_o}{lim}f(x)=L$$
+$$\underset{x\rightarrow x_o}{\lim}f(x)=L$$
 Más formalmente:
 \begin{definition}\label{lim}\cite{anamat1} El número $L$ se dice que es el límite de la función $f$ en $x_0$ si para cada número
-$\varepsilon >0$ existe un número $\delta >0$ tal que siempre que $x$ esté en el dominio de $f$ y
-$$0<|x-x_0|<\delta\Rightarrow |f(x)-L|<\varepsilon$$
+$\varepsilon >0$ existe un número $\delta_{i+1} >0$ tal que siempre que $x$ esté en el dominio de $f$ y
+$$0<|x-x_0|<\delta_{i+1}<\delta_i\Rightarrow |f(x)-L|<\varepsilon_{i+1}<\varepsilon_i$$
 Las notaciones 
-$$\underset{x\rightarrow x_o}{lim}f(x)=L\;\;\;\;y\;\;\;\underset{x_o}{lim}f=L$$
+$$\underset{x\rightarrow x_o}{\lim}f(x)=L\;\;\;\;y\;\;\;\underset{x_o}{\lim}f=L$$
 se usan para denotar que $L$ es el límite de $f$ en $x_0$
 \end{definition}
 
@@ -1048,23 +1048,23 @@ ciertos problemas matemáticos.
 
 \begin{enumerate}
  \item Se pueden hacer operaciones algebraicas antes o después de calcular los límites y el resultado no será afectado.
- $$lim(f+g)=lim(x)+lim(y)$$
+ $$\lim(f+g)=\lim(f)+\lim(g)$$
  \item El límite de una función siempre es único.
- $$lim\;f(x)=L,\; L=x,\; x\ne y \Rightarrow L\ne y$$
+ $$\lim\;f(x)=L,\; L=x,\; x\ne y \Rightarrow L\ne y$$
  \item El límite de la suma, resta o multiplicación de 2 funciones es igual a la suma, resta o multiplicación
  de los límites de las funciones.
  \item El límite de la división de 2 funciones es igual a la división de los límites de las funciones pero cuidando que
  el valor del divisor no sean cero.
- $$lim\left(\frac{f(x)}{g(x)}\right)=\frac{lim(f(x))}{lim(g(x))};\;\;g(x)\ne 0$$
+ $$\lim\left(\frac{f(x)}{g(x)}\right)=\frac{\lim(f(x))}{\lim(g(x))};\;\;g(x)\ne 0$$
  \item Una constante dentro la función a la que se le está calculando el límite puede ser sacada para multiplicar el
  límite sin afectar el resultado.
- $$lim(k\, f(x))=k\, lim( f(x))$$
+ $$\lim(k\, f(x))=k\, \lim( f(x))$$
  \item El límite de una constante es la misma constante.
- $$lim(k)=k$$
+ $$\lim(k)=k$$
  \item Límite de una función exponencial es igual a la base elevada al límite del exponente
- $$lim (k^{f(x)})=k^{lim(f(x))}$$
+ $$\lim (k^{f(x)})=k^{\lim(f(x))}$$
  \item Límite de una función logarítmica
- $$lim\;log(f(x))=log\lim(f(x))$$
+ $$\lim\;log(f(x))=log\lim(f(x))$$
  \item Teorema de estricción, también conocido como teorema del sandwich. Si se tienen  las funciones $f,g,h$ con dominio
  en $\mathscr{D}$ y quizás menos el punto $a$ entonces si 
  $$g(x)\leqslant f(x)  \leqslant h(x) $$ y
@@ -1101,9 +1101,9 @@ valor indefinido como valor de salida de la función.
 Otro ejemplo:
 
 \begin{align*}
-   \underset{x\rightarrow 2}{lim} (3x^2-4x+5)& = \underset{x\rightarrow 2}{lim}(3x^2) - \underset{x
-   \rightarrow 2}{lim} (4x) + \underset{x\rightarrow 2}{lim} (5)\\
-	& = 3\underset{x\rightarrow 2}{lim} (x^2) - 4\underset{x\rightarrow 2}{lim} (x) + 5\\
+   \underset{x\rightarrow 2}{\lim} (3x^2-4x+5)& = \underset{x\rightarrow 2}{\lim}(3x^2) - \underset{x
+   \rightarrow 2}{\lim} (4x) + \underset{x\rightarrow 2}{\lim} (5)\\
+	& = 3\underset{x\rightarrow 2}{\lim} (x^2) - 4\underset{x\rightarrow 2}{\lim} (x) + 5\\
 	& = 3(2)2- 4(2) + 5\\
 	& = 12-8 + 5=9	
 \end{align*}
@@ -1119,7 +1119,7 @@ $x$ cuando el acercamiento a $x$ se realiza desde la derecha y un signo - a la d
 realiza desde la izquierda.
 En el ejemplo dado en la figura \ref{lld} el límite acercándose desde la izquierda ($x<x_0$) es distinto 
 al límite acercándose desde la derecha ($x>x_0$): $f(x\rightarrow x_0+) \neq f(x \rightarrow x_0-)$. Por lo tanto,
-el límite cuando $x\rightarrow x0$ no existe. En este caso $f(x)=\underset{x\rightarrow x_0+}{lim}f(x)$
+el límite cuando $x\rightarrow x0$ no existe. En este caso $f(x)=\underset{x\rightarrow x_0+}{\lim}f(x)$
 \begin{figure}
 \centering
  \includegraphics[scale=1.5]{text24}\caption{Ejemplo de límites laterales distintos}\label{lld}
@@ -1132,10 +1132,10 @@ y no un número. Una cantidad extremadamente grande la cual no está definida pu
 Cuando se calcula el límite de una fracción, en la que el numerador se acerca a una cantidad positiva o negativa,
 si el denominador se mueve hacia 0, entonces en ese caso se dice que el límite es inexistente.
 Con el fin de explicar el comportamiento de tales funciones, decimos que
-$$\underset{x\rightarrow x_0}{lim}f(x)=\infty$$
+$$\underset{x\rightarrow x_0}{\lim}f(x)=\infty$$
 aunque el límite no existe ya que es un número indefinido. No es el mismo caso cuando el límite de la función de $x$ 
 cuando $x$ tiende a infinito, ya que si la función es asintótica a una línea horizontal entonces el límite sí
-existe por ejemplo $\underset{x\rightarrow \infty}{lim}(\frac{5x+7}{x})$ ya que en este caso $x$ se dirige hacia
+existe por ejemplo $\underset{x\rightarrow \infty}{\lim}(\frac{5x+7}{x})$ ya que en este caso $x$ se dirige hacia
 infinito cualquier cantidad y $f(x)$ se acerca a 5. 
 \section{Asíntotas.}
 La asíntota es la recta a la cual se acerca una función asintótica a la misma. Se dice que la función y la recta son asintóticas entre sí o que se van acercando 
@@ -1148,7 +1148,7 @@ $$f(x)=k$$
 La funciones asintóticas pueden ser:
 $$f(x)=2$$
 $$g(x)=\frac{2x^2+3}{x^2-1}$$
-$$\underset{x\rightarrow \infty}{lim}g(x)=2$$
+$$\underset{x\rightarrow \infty}{\lim}g(x)=2$$
 Es este caso $f(x)$ es la recta que es la asíntota y $g(x)$ es la función que se va acercando a 2.
 \subsection{Asíntotas Verticales}
 Una línea vertical está definida por la fórmula:
@@ -1179,8 +1179,8 @@ Para que una función continua sea continua en un punto $P$ específico, debe cu
  \item la función $f(s)$ debe tener un valor definido.
  $$f(x)\in \mathscr{R}$$
  \item Para un punto a en el dominio de la función, 
-$\underset{x\rightarrow x_0+}{lim}f(x) = \underset{x\rightarrow x_0-}{lim}f(x)$ y también  
-$\underset{x\rightarrow x_0}{lim}f(x)=f(x_0)$ 
+$\underset{x\rightarrow x_0+}{\lim}f(x) = \underset{x\rightarrow x_0-}{\lim}f(x)$ y también
+$\underset{x\rightarrow x_0}{\lim}f(x)=f(x_0)$
 \end{enumerate}
 Si alguna de las condiciones falla, se dice que la función es discontinua en el punto donde $r = x$. 
 
@@ -1207,19 +1207,19 @@ que toca una línea en un solo punto (a menos que la línea sea una recta), y qu
 \section{Definición de la derivada de una función.}
 \begin{definition}\label{der}
 Para un intervalo continuo, la derivada de una función es el:
-$$f'(x)=\underset{\mathrm{d}x\rightarrow 0}{lim}\frac{f(x+\mathrm{d}x)-f(x)}{\mathrm{d}x}$$
+$$f'(x)=\underset{\mathrm{d}x\rightarrow 0}{\lim}\frac{f(x+\mathrm{d}x)-f(x)}{\mathrm{d}x}$$
 \end{definition}
 
 \section{Diferenciales.}
 Son intervalos tan pequeños que se consideran puntos, aunque siempre siguen siendo intervalos, los más conocidos son:
 \begin{definition}\label{dx}
  delta x
-$$\mathrm{d}x=\underset{(x_2-x_1)\rightarrow 0}{lim}(x_2-x_1)$$
+$$\mathrm{d}x=\underset{(x_2-x_1)\rightarrow 0}{\lim}(x_2-x_1)$$
 \end{definition}
 
 \begin{definition}\label{dy}
  delta y
-$$\mathrm{d}y=\underset{(f(x+\mathrm{d}x)-f(x))\rightarrow 0}{lim}f(x+\mathrm{d})-f(x)$$
+$$\mathrm{d}y=\underset{(f(x+\mathrm{d}x)-f(x))\rightarrow 0}{\lim}f(x+\mathrm{d})-f(x)$$
 \end{definition}
 
 
