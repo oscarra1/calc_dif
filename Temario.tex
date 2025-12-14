@@ -1207,19 +1207,23 @@ que toca una línea en un solo punto (a menos que la línea sea una recta), y qu
 \section{Definición de la derivada de una función.}
 \begin{definition}\label{der}
 Para un intervalo continuo, la derivada de una función es el:
-$$f'(x)=\underset{\mathrm{d}x\rightarrow 0}{\lim}\frac{f(x+\mathrm{d}x)-f(x)}{\mathrm{d}x}$$
+$$f'(x)=\underset{x_1\rightarrow x}{\lim}\frac{f(x+\mathrm{d}x)-f(x)}{(x-x_1)}=\underset{x_1\rightarrow x}{\lim}\frac{\dif f(x)}{\dif x}   $$
 \end{definition}
 
 \section{Diferenciales.}
-Son intervalos tan pequeños que se consideran puntos, aunque siempre siguen siendo intervalos, los más conocidos son:
+Son intervalos tan pequeños que se consideran puntos, aunque siempre siguen siendo intervalos, los más conocidos son $\dif x$ y $\dif y$, entonces si tenemos un $x_i$ que se va acercando por ejemplo a 0 sin llegar nunca a ser cero:
+\begin{equation}
+ x_1<x_2<x_3<...<0
+\end{equation}
+
 \begin{definition}\label{dx}
  delta x
-$$\mathrm{d}x=\underset{(x_2-x_1)\rightarrow 0}{\lim}(x_2-x_1)$$
+$$0=\underset{(x-x_i)\rightarrow 0}{\lim}(x-x_i)=\underset{\dif x\rightarrow 0}{\lim}\dif x$$
 \end{definition}
 
 \begin{definition}\label{dy}
  delta y
-$$\mathrm{d}y=\underset{(f(x+\mathrm{d}x)-f(x))\rightarrow 0}{\lim}f(x+\mathrm{d})-f(x)$$
+$$0=\underset{(f(x+\mathrm{d}x)-f(x))\rightarrow 0}{\lim}(f(x+\dif x)-f(x))=\underset{ \dif y  \rightarrow 0}{\lim}\dif y  $$
 \end{definition}
 
 
@@ -1267,8 +1271,8 @@ La derivada de una suma de funciones es igual a la suma de sus derivadas
 La derivada de una función de funciones es la derivada de la función externa con respecto a la función interna
 que multiplica a la derivada de la función interna con respecto a la variable independiente
 \begin{definition}\label{regcad}
-La derivada de un polinomio es 
- $$\diff{}{x}(u(v))=\left(\diff{u}{v}\right)\left(\diff{v}{x}\right)$$
+La derivada de una funciòn $u$ de una funciòn $v$ de $x$ es
+ $$\diff{}{x}(u(v(x))=\left(\diff{u}{v}\right)\left(\diff{v}{x}\right)$$
 \end{definition}
 \section{Orden de una derivada}
 A una derivada se le conoce como derivada de primer orden, a la derivada de la derivada se le conoce como derivada de 
